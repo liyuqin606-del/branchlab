@@ -43,6 +43,10 @@ def main():
         raise FileExistsError('Use a new analysis directory to preserve development attempts')
     rows=json.loads((source/'episodes.json').read_text())
     cfg=json.loads((source/'config.json').read_text())
+    collection=json.loads((source/'collection.json').read_text())
+    expected=sum(len(seeds) for seeds in cfg['seeds'].values())*len(cfg['conditions'])
+    if len(rows)!=expected or len({r['id'] for r in rows})!=expected:
+        raise ValueError('Incomplete or duplicate development episodes')
     started=time.perf_counter()
     methods=[]
     for name,probe,always,budget in [('logs_only',None,False,0),('logs_only_short',None,False,2),
@@ -71,10 +75,10 @@ def main():
     comparisons=[{'baseline':m['name'],'search_seed':m['search_seed'],
                   'candidate_minus_baseline':ce['mean_development_loss']-m['mean_development_loss']}
                  for m in methods if m['name'] not in ('counterexample','full_enumeration')]
-    gate='DEVELOPMENT_SIGNAL' if all(r['candidate_minus_baseline'] < -0.001 for r in comparisons) else 'DEVELOPMENT_NOGO'
+    gate='DEVELOPMENT_SIGNAL' if not collection['failures'] and all(r['candidate_minus_baseline'] < -0.001 for r in comparisons) else 'DEVELOPMENT_NOGO'
     summary={'status':'completed','confirmatory':False,'method':'shared-gradient cost-aware conditional diagnostics',
              'gate':gate,'config':cfg,'methods':methods,'comparisons':comparisons,
-             'analysis_seconds':time.perf_counter()-started,
+             'analysis_seconds':time.perf_counter()-started,'collection':collection,
              'claim':'Development only. No test text or confirmatory cohort has been evaluated.'}
     json_write(out/'summary.json',summary)
     print(json.dumps({'gate':gate,'methods':[{k:m[k] for k in ['name','search_seed','mean_development_loss','acquisition_count','search_revealed_cells']} for m in methods]},indent=2))

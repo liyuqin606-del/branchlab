@@ -2,7 +2,20 @@
   "goal_started": "2026-09-05",
   "confirmation_attempts": [],
   "iterations": [
-    {"id": "v0.1.0", "status": "NOGO_RELEASED", "evidence": "reports/release/summary.json", "finding": "Probes did not improve audit repair regret and consumed training budget", "future_role": "development_only"},
-    {"id": "v0.2-development-1", "status": "DEVELOPMENT_IN_PROGRESS", "question": "Can net-budget training targets and conditional acquisition recover a useful diagnostic policy?", "confirmatory": false}
+    {
+      "id": "v0.1.0",
+      "status": "NOGO_RELEASED",
+      "evidence": "reports/release/summary.json",
+      "finding": "Probes did not improve audit repair regret and consumed training budget",
+      "future_role": "development_only"
+    },
+    {
+      "id": "v0.2-development-1",
+      "status": "DEVELOPMENT_NOGO",
+      "question": "Can net-budget training targets and conditional acquisition recover a useful diagnostic policy?",
+      "confirmatory": false,
+      "evidence": "reports/development_v2/summary.json",
+      "finding": "All search strategies retained the no-probe policy; no cost-adjusted advantage over logs-only. 56 states, 7 new development seeds, 4096 dev tokens per final evaluation."
+    }
   ]
 }

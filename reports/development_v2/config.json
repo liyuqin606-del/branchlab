@@ -1,0 +1,60 @@
+{
+  "model": {
+    "d_model": 160,
+    "n_layers": 3,
+    "n_heads": 8,
+    "max_seq_len": 128
+  },
+  "seeds": {
+    "discovery": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "development": [
+      12,
+      13,
+      14
+    ]
+  },
+  "baseline_steps": 160,
+  "checkpoint_steps": [
+    40,
+    80,
+    120,
+    160
+  ],
+  "batch_size": 4,
+  "seq_len": 64,
+  "lr": 0.001,
+  "conditions": [
+    "native_80",
+    "native_160",
+    "stale_40",
+    "stale_80",
+    "matched_stale_80",
+    "blend_80",
+    "lr_half",
+    "lr_double"
+  ],
+  "probe_offsets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "eval_split": "dev",
+  "eval_offset_tokens": 8192,
+  "eval_batches": 16,
+  "audit_budget_forward_batches": 224,
+  "reserved_final_eval_cost": 32,
+  "search_budget_cells": 180,
+  "search_seeds": [
+    0,
+    1,
+    2
+  ],
+  "scope": "DEVELOPMENT ONLY. Shared current-gradient candidate updates; cheap next-batch forward diagnostics; natural and declared historical optimizer states. No test-text evaluation or confirmation.",
+  "vocab_size": 512
+}

@@ -2,6 +2,8 @@
 
 **From-scratch language modeling and counterexample-guided training diagnostics.**
 
+Development branch: [the active goal](GOAL.md) continues after the v0.1.0 release. [Iteration 2](reports/development_v2/REPORT.md) also returned NOGO: conditional diagnostics retained the logs-only policy on 56 development states. Failed attempts are preserved in the [iteration ledger](protocols/ITERATION_LEDGER.json); no independent confirmation has been attempted.
+
 BranchLab combines the engineering agenda of [Stanford CS336](https://cs336.stanford.edu/) with an audit of [Marin/Delphi's public experiments](https://huggingface.co/datasets/marin-community/delphi-blog-data). It implements a small language model, complete-state training branches, and a finite diagnostic-program search. The question is concrete: **does spending compute to diagnose a training state leave a better model than spending that compute on training?**
 
 This is an independent, AI-assisted research engineering project. It is not an official Stanford assignment solution or a reproduction of Marin's large-model training.
