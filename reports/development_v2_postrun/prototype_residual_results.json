@@ -1,0 +1,1349 @@
+{
+  "scope": "Post-run development only. No candidate search budget or confirmation claim. Nested whole-seed out-of-fold residual/gain fits. All48settings retained.",
+  "settings": [
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.421453063065807,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.005536180920898914,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.005536180920898914,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.005536180920898914,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.4228940506776175,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.005536180920898914,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.005536180920898914,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 1,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.418438587958614,
+      "free_short": 3.4204486838231483,
+      "paid": 3.42387214054664,
+      "conditional": 3.418438587958614,
+      "queries": 0,
+      "oof_net_gain": -0.004554459359496832,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.4000204764306545,
+          "conditional": 3.4000204764306545
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4058662205934525,
+          "conditional": 3.4058662205934525
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.421453063065807,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.006733090616762638,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.006733090616762638,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005780124571174383,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.006733090616762638,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005780124571174383,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 1,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.421453063065807,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.006733090616762638,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.006733090616762638,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.0057814051397144794,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 10,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "lr_half:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "lr_half:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "lr_half:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "lr_half:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:1:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:2:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:4:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    },
+    {
+      "alpha": 10,
+      "residual_alpha": 100,
+      "probe": "momentum_zero:8:next_batch_loss",
+      "free": 3.4163845827182135,
+      "free_short": 3.41992162540555,
+      "paid": 3.42387214054664,
+      "conditional": 3.4163845827182135,
+      "queries": 0,
+      "oof_net_gain": -0.005751369055360556,
+      "per_seed": [
+        {
+          "seed": 12,
+          "free": 3.3972389306873083,
+          "conditional": 3.3972389306873083
+        },
+        {
+          "seed": 13,
+          "free": 3.449429066851735,
+          "conditional": 3.449429066851735
+        },
+        {
+          "seed": 14,
+          "free": 3.4024857506155968,
+          "conditional": 3.4024857506155968
+        }
+      ]
+    }
+  ]
+}
