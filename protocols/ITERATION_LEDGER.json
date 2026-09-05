@@ -19,9 +19,17 @@
     },
     {
       "id": "v0.2-repair-lifetime-audit",
-      "status": "DEVELOPMENT_MECHANISM_AUDIT_PLANNED",
+      "status": "DEVELOPMENT_MECHANISM_AUDIT_COMPLETED_NO_RESCUE",
       "question": "Does the one-step diagnostic measure a repair effect that vanishes or reverses by64 continuation updates?",
       "protocol": "protocols/repair_lifetime_v2.md",
+      "confirmatory": false,
+      "finding": "336/336 endpoint values reproduced exactly. Short-horizon gains did not surpass every simple control or distinguish CE from experts and same-budget search.",
+      "evidence": "reports/repair_lifetime_v2/FINDINGS.md"
+    },
+    {
+      "id": "v0.3-committed-prefix-screen",
+      "status": "DEVELOPMENT_PLANNED",
+      "protocol": "protocols/committed_prefix_v3.md",
       "confirmatory": false
     }
   ]
