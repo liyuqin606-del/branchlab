@@ -1,0 +1,489 @@
+{
+  "format_version": 1,
+  "created_utc": "2026-09-05T09:29:35.637533+00:00",
+  "status": "PASS",
+  "scope": "Read-only verification of actual released checkpoints, four real pilot continuation updates, and inference/trainer weight parity. This is not independent scientific replication or an RSI result.",
+  "runtime": {
+    "device": "cpu",
+    "torch_version": "2.8.0",
+    "threads": 4
+  },
+  "frozen_input_checks": {
+    "artifacts/tokenizer.json": {
+      "sha256": "6c15c694cab31d5901049fc38b0c498670960d121cca5ae4273b957c1269e9c2",
+      "matches_frozen_input": true
+    },
+    "artifacts/train_tokens.npy": {
+      "sha256": "74bcbfec2c442d6a31008152bb1098e13ec33ce472da3e64766e5830b526d836",
+      "matches_frozen_input": true
+    },
+    "artifacts/dev_tokens.npy": {
+      "sha256": "3e953134b0a6f1d26491e4e978b914ade4a9a81ea150480d29b1373fcc917acb",
+      "matches_frozen_input": true
+    },
+    "artifacts/test_tokens.npy": {
+      "sha256": "09cd873f32f688d919f5d7877a5107e46a523ee5d7463636418ce3d868d6cfb3",
+      "matches_frozen_input": true
+    }
+  },
+  "frozen_core_source_checks": {
+    "src/branchlab/model.py": {
+      "sha256": "0ab8c76823914aada6e952b07d761192253cd8c37fb6572df2c5fd085d686f46",
+      "matches_frozen_source": true
+    },
+    "src/branchlab/optim.py": {
+      "sha256": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+      "matches_frozen_source": true
+    },
+    "src/branchlab/tokenizer.py": {
+      "sha256": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+      "matches_frozen_source": true
+    },
+    "src/branchlab/training.py": {
+      "sha256": "381c63bc8b06a48c47ca8bf732ecacea32c5f6d3f0fc88dbe06a5f548a216599",
+      "matches_frozen_source": true
+    },
+    "src/branchlab/experiments.py": {
+      "sha256": "7cf2a2e840f288c87f1b940831359e92144c69c7021ddfd80c0a8bd89409bc0e",
+      "matches_frozen_source": true
+    }
+  },
+  "pilot_checkpoint": {
+    "path": "artifacts/pilot/checkpoints/seed-5.pt",
+    "sha256": "73a2465b8cb1f358edde5e1fc75805db535f0003cfcd428b8add69ff19ab0cc8",
+    "seed": 5,
+    "episode_id": "test-005-clean",
+    "condition": "clean",
+    "action": "keep",
+    "document_order_is_complete_permutation": true,
+    "document_order_matches_seed": true,
+    "document_count": 6000,
+    "restored_step": 120,
+    "restored_stream_cursor": 30720,
+    "restored_stream_tokens_sha256": "8823d21e33b7c8074e0d686fb6a566d2c4f29db22d93a88612f25cd058504b26",
+    "restored_scheduler": {
+      "name": "completed_cosine_then_fixed",
+      "continuation_lr": 0.001
+    },
+    "restored_model_weights_exact": true,
+    "optimizer_parameter_states_restored": 23,
+    "last_clipped_gradient_present_finite": true,
+    "last_clipped_gradient_numel": 1003680,
+    "replayed_updates": 4,
+    "all_eight_dev_test_losses_exactly_match": true,
+    "curve_replay": [
+      {
+        "horizon": 1,
+        "training_loss_replayed": 3.6993465423583984,
+        "dev_loss_expected": 3.6561901569366455,
+        "dev_loss_replayed": 3.6561901569366455,
+        "test_loss_expected": 3.4679043292999268,
+        "test_loss_replayed": 3.4679043292999268,
+        "dev_exact_match": true,
+        "test_exact_match": true,
+        "dev_abs_difference": 0.0,
+        "test_abs_difference": 0.0
+      },
+      {
+        "horizon": 2,
+        "training_loss_replayed": 3.524691581726074,
+        "dev_loss_expected": 3.652709484100342,
+        "dev_loss_replayed": 3.652709484100342,
+        "test_loss_expected": 3.4491865634918213,
+        "test_loss_replayed": 3.4491865634918213,
+        "dev_exact_match": true,
+        "test_exact_match": true,
+        "dev_abs_difference": 0.0,
+        "test_abs_difference": 0.0
+      },
+      {
+        "horizon": 3,
+        "training_loss_replayed": 3.6134908199310303,
+        "dev_loss_expected": 3.653944253921509,
+        "dev_loss_replayed": 3.653944253921509,
+        "test_loss_expected": 3.4376540184020996,
+        "test_loss_replayed": 3.4376540184020996,
+        "dev_exact_match": true,
+        "test_exact_match": true,
+        "dev_abs_difference": 0.0,
+        "test_abs_difference": 0.0
+      },
+      {
+        "horizon": 4,
+        "training_loss_replayed": 3.632765293121338,
+        "dev_loss_expected": 3.6515331268310547,
+        "dev_loss_replayed": 3.6515331268310547,
+        "test_loss_expected": 3.433871269226074,
+        "test_loss_replayed": 3.433871269226074,
+        "dev_exact_match": true,
+        "test_exact_match": true,
+        "dev_abs_difference": 0.0,
+        "test_abs_difference": 0.0
+      }
+    ]
+  },
+  "showcase_weight_parity": {
+    "inference_path": "artifacts/showcase/model.pt",
+    "inference_sha256": "500275077f293d8b0789de76165415fff003dadfe5e10b0fef04d24073fcabb7",
+    "trainer_path": "artifacts/showcase/checkpoint.pt",
+    "trainer_sha256": "8a724c29f1bd85d53cf46c9f319121aa71b6058bceb044ab0c0d9c75fb24cb33",
+    "config_exact_match": true,
+    "weight_key_count": 45,
+    "all_weight_tensors_exact_match": true,
+    "weight_tensors": {
+      "embedding.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.0.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.1.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.2.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.3.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.4.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.attn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.attn.qkv.weight": {
+        "exact_match": true,
+        "shape": [
+          1536,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.attn.out_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.ffn_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.ffn.gate_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.ffn.up_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          1365,
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "blocks.5.ffn.down_proj.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          1365
+        ],
+        "dtype": "torch.float32"
+      },
+      "final_norm.weight": {
+        "exact_match": true,
+        "shape": [
+          512
+        ],
+        "dtype": "torch.float32"
+      },
+      "lm_head.weight": {
+        "exact_match": true,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "torch.float32"
+      }
+    }
+  },
+  "verification_compute": {
+    "training_updates": 4,
+    "evaluation_batches": 8,
+    "training_tokens": 1024,
+    "scope": "Extra release verification work; separate from the frozen pilot collection ledger; no benchmark rerun"
+  }
+}

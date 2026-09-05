@@ -29,5 +29,13 @@
     "configs/showcase.json": "77233b77de23871cc871e62e3d248245eb6dc51de74994fe48fb402e4322a0c1",
     "protocols/pilot_v1.md": "dd8f402bcf5938f3852bcc2136dacda1103f3c4d9f65133d5ba5f32cbb35359f"
   },
-  "showcase_provenance_note": "The showcase was trained before checkpoint-validation and device-synchronization hardening. Its configuration, weights and logs are preserved. The pilot was collected after these changes and its source snapshot matches this release."
+  "showcase_provenance_note": "The showcase was trained before checkpoint-validation and device-synchronization hardening. Its configuration, weights and logs are preserved. The pilot was collected after these changes and its source snapshot matches this release.",
+  "wheel_installation": {
+    "isolated_package_target": true,
+    "imported_installed_wheel_outside_repository": true,
+    "version": "0.1.0",
+    "generation_smoke_passed": true,
+    "dependencies": "Reused tested local dependencies; not a new dependency-resolution experiment"
+  },
+  "actual_checkpoint_verification": "checkpoint_verification.json"
 }
