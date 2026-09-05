@@ -1,0 +1,270 @@
+{
+  "status": "SOURCE_AUDIT_ONLY_NO_TRAINING",
+  "audited_at_utc": "2026-09-05T09:23:44.630674+00:00",
+  "dataset": "marin-community/delphi-blog-data",
+  "revision": "78f8e0c57d76326876e93d925354aad156188f08",
+  "source_lock_sha256": "9114762695fcc3718e64b9263c5dcfd611072c1d00f68dc00e37da1ef13cbc97",
+  "pyarrow_version": "21.0.0",
+  "files": [
+    {
+      "config": "delphi-ladder",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/delphi-ladder/train.parquet",
+      "bytes": 19885,
+      "sha256": "5a88a99127c9d51af22544b126d91497440f43f2c5c9e82e8fa32d8359a796d9",
+      "rows": 102,
+      "columns": [
+        "kind",
+        "quantizer",
+        "run_name",
+        "state",
+        "tokens",
+        "loss",
+        "params",
+        "total_gflops",
+        "gflops_bucket_gflops",
+        "gflops_bucket_flops",
+        "wandb_url",
+        "gflops_bucket",
+        "C_flops",
+        "T_star",
+        "P_star",
+        "loss_star",
+        "a",
+        "b",
+        "c",
+        "logT_star",
+        "a_under",
+        "a_over",
+        "seed",
+        "C_nom"
+      ],
+      "kind_counts": {
+        "isoflop": 81,
+        "optimum": 7,
+        "fit": 7,
+        "held_out": 7
+      },
+      "state_counts": {
+        "finished": 88,
+        "None": 14
+      },
+      "unique_wandb_urls": 88,
+      "wandb_nulls": 14,
+      "explicit_temporal_or_action_fields": []
+    },
+    {
+      "config": "first-ladder",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/first-ladder/train.parquet",
+      "bytes": 19909,
+      "sha256": "5cdbc299fdb2b8ae358e4d569c9b4917a229f684c59e9fe65b7dfe223d2f5c28",
+      "rows": 98,
+      "columns": [
+        "kind",
+        "quantizer",
+        "run_name",
+        "state",
+        "tokens",
+        "loss",
+        "params",
+        "total_gflops",
+        "gflops_bucket_gflops",
+        "gflops_bucket_flops",
+        "wandb_url",
+        "gflops_bucket",
+        "C_flops",
+        "T_star",
+        "P_star",
+        "loss_star",
+        "a",
+        "b",
+        "c",
+        "logT_star",
+        "a_under",
+        "a_over",
+        "seed",
+        "C_nom"
+      ],
+      "kind_counts": {
+        "isoflop": 81,
+        "optimum": 7,
+        "fit": 7,
+        "held_out": 3
+      },
+      "state_counts": {
+        "finished": 83,
+        "None": 14,
+        "crashed": 1
+      },
+      "unique_wandb_urls": 84,
+      "wandb_nulls": 14,
+      "explicit_temporal_or_action_fields": []
+    },
+    {
+      "config": "hparam-scaling",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/hparam-scaling/train.parquet",
+      "bytes": 380897,
+      "sha256": "922d56ed65c3085ed718cf3e3b97cdebe3d468ff66df75ae9147185027fb3794",
+      "rows": 3737,
+      "columns": [
+        "id",
+        "name",
+        "display_name",
+        "state",
+        "batch_size",
+        "hidden_dim",
+        "seq_len",
+        "train_length",
+        "token_bucket",
+        "tokens",
+        "lr",
+        "adam_lr",
+        "epsilon",
+        "beta1",
+        "beta2",
+        "max_grad_norm",
+        "z_loss_weight",
+        "paloma_macro_loss",
+        "wandb_url"
+      ],
+      "kind_counts": {
+        "None": 3737
+      },
+      "state_counts": {
+        "finished": 3737
+      },
+      "unique_wandb_urls": 3737,
+      "wandb_nulls": 0,
+      "explicit_temporal_or_action_fields": []
+    },
+    {
+      "config": "lucky-seeds",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/lucky-seeds/train.parquet",
+      "bytes": 10736,
+      "sha256": "139cc4b64810a6b50ee6f08bbe76fab3ac9e69992c4a0153ba072f961f122b06",
+      "rows": 14,
+      "columns": [
+        "kind",
+        "quantizer",
+        "gflops_bucket",
+        "C_flops",
+        "T_star",
+        "P_star",
+        "loss_star",
+        "run_name",
+        "seed",
+        "state",
+        "tokens",
+        "loss",
+        "params",
+        "total_gflops",
+        "C_nom",
+        "wandb_url"
+      ],
+      "kind_counts": {
+        "optimum": 7,
+        "held_out": 7
+      },
+      "state_counts": {
+        "None": 7,
+        "finished": 7
+      },
+      "unique_wandb_urls": 7,
+      "wandb_nulls": 7,
+      "explicit_temporal_or_action_fields": []
+    },
+    {
+      "config": "mmlu-emergence",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/mmlu-emergence/train.parquet",
+      "bytes": 15524,
+      "sha256": "dda6f81ff43bcf1eb226127db753196d55974a59ee264b1919376b276dd36ae7",
+      "rows": 78,
+      "columns": [
+        "kind",
+        "task",
+        "pool",
+        "display_name",
+        "run_name",
+        "budget",
+        "shot",
+        "accuracy",
+        "choice_logprob",
+        "macro_bpb",
+        "pass_at_1",
+        "pass_at_1_stderr",
+        "exact_match_flex",
+        "exact_match_flex_stderr",
+        "exact_match_strict",
+        "exact_match_strict_stderr",
+        "state",
+        "wandb_url"
+      ],
+      "kind_counts": {
+        "mmlu-delphi": 20,
+        "mmlu-external": 16,
+        "humaneval-delphi": 10,
+        "humaneval-external": 11,
+        "gsm8k-delphi": 10,
+        "gsm8k-external": 11
+      },
+      "state_counts": {
+        "finished": 56,
+        "None": 22
+      },
+      "unique_wandb_urls": 56,
+      "wandb_nulls": 22,
+      "explicit_temporal_or_action_fields": []
+    },
+    {
+      "config": "overtraining-forecast",
+      "source_url": "https://huggingface.co/datasets/marin-community/delphi-blog-data/resolve/78f8e0c57d76326876e93d925354aad156188f08/overtraining-forecast/train.parquet",
+      "bytes": 18279,
+      "sha256": "42492f881c894f66161596b6e38838142783ae16226e746707e0bfc53dfd200f",
+      "rows": 88,
+      "columns": [
+        "kind",
+        "quantizer",
+        "run_name",
+        "state",
+        "tokens",
+        "loss",
+        "params",
+        "total_gflops",
+        "gflops_bucket_gflops",
+        "gflops_bucket_flops",
+        "wandb_url",
+        "gflops_bucket",
+        "C_flops",
+        "a",
+        "b",
+        "c",
+        "logT_star",
+        "T_star",
+        "loss_star",
+        "P_star",
+        "a_under",
+        "a_over"
+      ],
+      "kind_counts": {
+        "isoflop": 81,
+        "fit": 7
+      },
+      "state_counts": {
+        "finished": 81,
+        "None": 7
+      },
+      "unique_wandb_urls": 81,
+      "wandb_nulls": 7,
+      "explicit_temporal_or_action_fields": []
+    }
+  ],
+  "total_rows": 4117,
+  "total_bytes": 465230,
+  "unique_nonempty_wandb_urls_across_tables": 3965,
+  "limitations": [
+    "Rows include derived fits and repeated or external evaluations; rows are not independent trajectories.",
+    "W&B URLs were counted, not downloaded or verified as complete histories.",
+    "No full model/optimizer/RNG/data-cursor checkpoints were downloaded.",
+    "Field-name screening applies only to these six pinned parquet files.",
+    "This audit does not measure training quality, intervention effects, or RSI."
+  ]
+}

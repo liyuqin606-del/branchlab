@@ -1,0 +1,33 @@
+{
+  "source_matches_pilot_freeze": true,
+  "frozen_file_count": 13,
+  "tests": {
+    "passed": 69,
+    "skipped": 1,
+    "skip_reason": "CUDA not available",
+    "scope": "Implementation verification, including real tiny smoke; not evidence of algorithm advantage"
+  },
+  "analysis_replay": {
+    "decisions_match": true,
+    "gate_match": true,
+    "scope": "Analysis replay only; no physical collection savings"
+  },
+  "figure_visual_review": "Both generated figures inspected; no clipping or missing labels observed",
+  "files": {
+    "src/branchlab/benchmark.py": "7073157830eec3f09a0c3bd367a70733aff0c74507503d8ba0b034f6ea1745f9",
+    "src/branchlab/__init__.py": "85bc002c57f0d5c4ccf3ddb30dc13742818c2c24fd71de0398f8514769b6b897",
+    "src/branchlab/model.py": "0ab8c76823914aada6e952b07d761192253cd8c37fb6572df2c5fd085d686f46",
+    "src/branchlab/tokenizer.py": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+    "src/branchlab/experiments.py": "7cf2a2e840f288c87f1b940831359e92144c69c7021ddfd80c0a8bd89409bc0e",
+    "src/branchlab/cli.py": "7ef7f42dff6390b8e79b6d9718ac54058c227a2ee0a0b63323a2c7f4575a37ad",
+    "src/branchlab/optim.py": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+    "src/branchlab/training.py": "381c63bc8b06a48c47ca8bf732ecacea32c5f6d3f0fc88dbe06a5f548a216599",
+    "src/branchlab/data.py": "d38587893c1f89324c0e88182e4134c2bcabb4a52c8e949aec129de0e27635c7",
+    "src/branchlab/reporting.py": "09f6795f6b2233fcdd6097038c9843be6c51fe5204aa66271d98a7e11720bdff",
+    "src/branchlab/synthesis.py": "69434a8d202e889f49f4d3a25cba8c22a73cfd131002baf4bba90e47d3676056",
+    "configs/pilot.json": "442ee449549b9d8bb0d7ad2634270733eb9ca663b4b71de599f2314378d45d93",
+    "configs/showcase.json": "77233b77de23871cc871e62e3d248245eb6dc51de74994fe48fb402e4322a0c1",
+    "protocols/pilot_v1.md": "dd8f402bcf5938f3852bcc2136dacda1103f3c4d9f65133d5ba5f32cbb35359f"
+  },
+  "showcase_provenance_note": "The showcase was trained before checkpoint-validation and device-synchronization hardening. Its configuration, weights and logs are preserved. The pilot was collected after these changes and its source snapshot matches this release."
+}

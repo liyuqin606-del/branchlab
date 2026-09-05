@@ -1,0 +1,1906 @@
+{
+  "status": "completed",
+  "scope": "Controlled training perturbations; finite diagnostic grammar; exploratory pilot",
+  "config": {
+    "model": {
+      "d_model": 160,
+      "n_layers": 3,
+      "n_heads": 8,
+      "max_seq_len": 128
+    },
+    "seeds": {
+      "discovery": [
+        0,
+        1,
+        2
+      ],
+      "development": [
+        3,
+        4
+      ],
+      "test": [
+        5,
+        6,
+        7
+      ]
+    },
+    "baseline_steps": 120,
+    "batch_size": 4,
+    "seq_len": 64,
+    "lr": 0.001,
+    "conditions": [
+      "clean",
+      "high_lr",
+      "opposed_momentum"
+    ],
+    "repair_actions": [
+      "keep",
+      "lr_half",
+      "momentum_zero"
+    ],
+    "repair_horizon": 24,
+    "audit_budget_forward_batches": 160,
+    "max_repair_steps": 52,
+    "search_budget_cells": 150,
+    "max_probes": 2,
+    "search_seeds": [
+      0,
+      1,
+      2
+    ],
+    "scope": "Controlled training perturbations; finite diagnostic grammar; exploratory pilot"
+  },
+  "episodes": 24,
+  "audit_seeds": [
+    5,
+    6,
+    7
+  ],
+  "collection": {
+    "training_updates": 4704,
+    "training_update_attempts": 4704,
+    "evaluation_batches": 7520,
+    "evaluation_batches_completed": 7520,
+    "trained_tokens": 1204224,
+    "baseline_training_updates": 960,
+    "branch_training_updates": 3744,
+    "branch_training_update_attempts": 3744,
+    "cost_interpretation": "Physical table construction including labels, audit curves and failed attempts. training_updates counts completed optimizer updates; evaluation_batches counts attempted evaluation forwards. Any 3-unit training-attempt cost is an analytic proxy, not exact failed-step FLOPs. Replay savings do not remove construction cost.",
+    "attempted_training_tokens": 1204224,
+    "failed_training_update_attempts": 0,
+    "elapsed_seconds": 132.79419891600264
+  },
+  "methods": [
+    {
+      "name": "passive_keep",
+      "search_seed": null,
+      "selected_probes": [],
+      "mean_test_loss": 3.4979735215504966,
+      "mean_regret": 0.10653988520304362,
+      "mean_probe_cost": 0.0,
+      "mean_repair_steps": 52.0,
+      "search_revealed_cells": 0,
+      "search_replay_probe_cost": 0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.5641395250956216,
+          "regret": 0.07415334383646648
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.4726901849110923,
+          "regret": 0.10424304008483887
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4570908546447754,
+          "regret": 0.14122327168782553
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.463977813720703,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.6136183738708496,
+          "regret": 0.05905961990356445,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.6148223876953125,
+          "regret": 0.16340041160583496,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.430893898010254,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.4473509788513184,
+          "regret": 0.04740452766418457,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.539825677871704,
+          "regret": 0.26532459259033203,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.377540111541748,
+          "regret": 0.002319812774658203,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.5367865562438965,
+          "regret": 0.1701509952545166,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "keep",
+          "repair_steps": 52,
+          "test_loss": 3.4569458961486816,
+          "regret": 0.25119900703430176,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        }
+      ]
+    },
+    {
+      "name": "logs_only",
+      "search_seed": null,
+      "selected_probes": [],
+      "mean_test_loss": 3.4167621665530734,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 0.0,
+      "mean_repair_steps": 52.0,
+      "search_revealed_cells": 0,
+      "search_replay_probe_cost": 0.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.454335848490397,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.422760566075643,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.37319008509318,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.4279022216796875,
+          "regret": 0.002330780029296875,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.4806931018829346,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 52,
+          "test_loss": 3.4544122219085693,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.4538207054138184,
+          "regret": 0.01607537269592285,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.387302875518799,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 52,
+          "test_loss": 3.4271581172943115,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.372418165206909,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 52,
+          "test_loss": 3.372983694076538,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 52,
+          "test_loss": 3.3741683959960938,
+          "regret": 0.0,
+          "probe_cost": 0,
+          "unspent_budget": 2
+        }
+      ]
+    },
+    {
+      "name": "fixed_expert",
+      "search_seed": null,
+      "selected_probes": [
+        "lr_half:4:loss_delta"
+      ],
+      "mean_test_loss": 3.4506654739379883,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 28.0,
+      "mean_repair_steps": 43.0,
+      "search_revealed_cells": 9,
+      "search_replay_probe_cost": 252.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.425285816192627,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.526425917943319,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.400284687678019,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.432953357696533,
+          "regret": 0.002330780029296875,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.4283242225646973,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 43,
+          "test_loss": 3.4145798683166504,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.5463740825653076,
+          "regret": 0.01607537269592285,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.5115787982940674,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 43,
+          "test_loss": 3.521324872970581,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.4046671390533447,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 43,
+          "test_loss": 3.3676373958587646,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 43,
+          "test_loss": 3.4285495281219482,
+          "regret": 0.0,
+          "probe_cost": 28,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "direct_short_trial",
+      "search_seed": null,
+      "selected_probes": [],
+      "mean_test_loss": 3.5105429225497775,
+      "mean_regret": 0.038928482267591685,
+      "mean_probe_cost": 42.0,
+      "mean_repair_steps": 38.0,
+      "search_revealed_cells": 0,
+      "search_replay_probe_cost": 0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.5463958581288657,
+          "regret": 0.05736724535624186
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.5631587505340576,
+          "regret": 0.03882781664530436
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4220741589864097,
+          "regret": 0.02059038480122884
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.503270387649536,
+          "regret": 0.023755550384521484,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.6326467990875244,
+          "regret": 0.1483461856842041,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.503270387649536,
+          "regret": 0.0,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.5627148151397705,
+          "regret": 0.014252662658691406,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.564046621322632,
+          "regret": 0.10223078727722168,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.5627148151397705,
+          "regret": 0.0,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "keep",
+          "repair_steps": 38,
+          "test_loss": 3.416893720626831,
+          "regret": 0.002319812774658203,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.4555537700653076,
+          "regret": 0.05945134162902832,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 38,
+          "test_loss": 3.39377498626709,
+          "regret": 0.0,
+          "probe_cost": 42,
+          "unspent_budget": 2
+        }
+      ]
+    },
+    {
+      "name": "counterexample",
+      "search_seed": 0,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "counterexample",
+      "search_seed": 1,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "counterexample",
+      "search_seed": 2,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "random",
+      "search_seed": 0,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4380.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "random",
+      "search_seed": 1,
+      "selected_probes": [
+        "lr_half:2:loss_delta"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4740.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "random",
+      "search_seed": 2,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 5280.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "enumeration",
+      "search_seed": 0,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "enumeration",
+      "search_seed": 1,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "enumeration",
+      "search_seed": 2,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 150,
+      "search_replay_probe_cost": 4560.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    },
+    {
+      "name": "full_enumeration",
+      "search_seed": 0,
+      "selected_probes": [
+        "lr_half:2:grad_alignment"
+      ],
+      "mean_test_loss": 3.4512661827935114,
+      "mean_regret": 0.0020451280805799696,
+      "mean_probe_cost": 16.0,
+      "mean_repair_steps": 47.0,
+      "search_revealed_cells": 270,
+      "search_replay_probe_cost": 8640.0,
+      "per_seed": [
+        {
+          "seed": 5,
+          "test_loss": 3.4227047761281333,
+          "regret": 0.0007769266764322916
+        },
+        {
+          "seed": 6,
+          "test_loss": 3.51334277788798,
+          "regret": 0.005358457565307617
+        },
+        {
+          "seed": 7,
+          "test_loss": 3.4177509943644204,
+          "regret": 0.0
+        }
+      ],
+      "decisions": [
+        {
+          "episode_id": "test-005-clean",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4074745178222656,
+          "regret": 0.002330780029296875,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-high_lr",
+          "seed": 5,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4272873401641846,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-005-opposed_momentum",
+          "seed": 5,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.433352470397949,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-clean",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.547809600830078,
+          "regret": 0.01607537269592285,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-high_lr",
+          "seed": 6,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4959447383880615,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-006-opposed_momentum",
+          "seed": 6,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.496273994445801,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-clean",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4201862812042236,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-high_lr",
+          "seed": 7,
+          "action": "lr_half",
+          "repair_steps": 47,
+          "test_loss": 3.4022164344787598,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        },
+        {
+          "episode_id": "test-007-opposed_momentum",
+          "seed": 7,
+          "action": "momentum_zero",
+          "repair_steps": 47,
+          "test_loss": 3.4308502674102783,
+          "regret": 0.0,
+          "probe_cost": 16,
+          "unspent_budget": 1
+        }
+      ]
+    }
+  ],
+  "gate": {
+    "status": "NOGO",
+    "reason": "The counterexample program does not beat every prespecified comparator in every audit seed, or a branch failed. No diagnostic advantage or RSI claim is admitted.",
+    "comparisons": [
+      {
+        "baseline": "passive_keep",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": -0.1414347489674883
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": 0.040652592976887725
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": -0.039339860280354966
+          }
+        ],
+        "all_audit_seeds_lower": false
+      },
+      {
+        "baseline": "logs_only",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": -0.0316310723622637
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": 0.09058221181233694
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": 0.044560909271240234
+          }
+        ],
+        "all_audit_seeds_lower": false
+      },
+      {
+        "baseline": "fixed_expert",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": -0.002581040064493667
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": -0.013083140055338838
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": 0.017466306686401367
+          }
+        ],
+        "all_audit_seeds_lower": false
+      },
+      {
+        "baseline": "direct_short_trial",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": -0.12369108200073242
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": -0.04981597264607762
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": -0.004323164621989228
+          }
+        ],
+        "all_audit_seeds_lower": true
+      },
+      {
+        "baseline": "random",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": 0.0
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": 0.0
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": 0.0
+          }
+        ],
+        "all_audit_seeds_lower": false
+      },
+      {
+        "baseline": "enumeration",
+        "per_seed": [
+          {
+            "seed": 5,
+            "counterexample_minus_baseline": 0.0
+          },
+          {
+            "seed": 6,
+            "counterexample_minus_baseline": 0.0
+          },
+          {
+            "seed": 7,
+            "counterexample_minus_baseline": 0.0
+          }
+        ],
+        "all_audit_seeds_lower": false
+      }
+    ]
+  },
+  "failures": [],
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.8.0",
+    "device": "cpu",
+    "threads": 4
+  },
+  "limitations": [
+    "One model size and one small repartitioned corpus; 3 held-out seeds",
+    "One fixed 256-token dev batch and one fixed 256-token test batch per branch evaluation",
+    "Synthetic perturbations; not real Marin training failures",
+    "Validation regret selects programs; cost-adjusted test loss is a separate outcome",
+    "All repair labels and probe tables are physically precomputed and charged in collection",
+    "Fixed finite grammar and synthesizer; recursive self-improvement is not tested"
+  ]
+}

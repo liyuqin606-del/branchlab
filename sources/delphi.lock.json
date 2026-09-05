@@ -1,0 +1,36 @@
+{
+  "dataset": "marin-community/delphi-blog-data",
+  "revision": "78f8e0c57d76326876e93d925354aad156188f08",
+  "files": [
+    {
+      "config": "delphi-ladder",
+      "bytes": 19885,
+      "sha256": "5a88a99127c9d51af22544b126d91497440f43f2c5c9e82e8fa32d8359a796d9"
+    },
+    {
+      "config": "first-ladder",
+      "bytes": 19909,
+      "sha256": "5cdbc299fdb2b8ae358e4d569c9b4917a229f684c59e9fe65b7dfe223d2f5c28"
+    },
+    {
+      "config": "hparam-scaling",
+      "bytes": 380897,
+      "sha256": "922d56ed65c3085ed718cf3e3b97cdebe3d468ff66df75ae9147185027fb3794"
+    },
+    {
+      "config": "lucky-seeds",
+      "bytes": 10736,
+      "sha256": "139cc4b64810a6b50ee6f08bbe76fab3ac9e69992c4a0153ba072f961f122b06"
+    },
+    {
+      "config": "mmlu-emergence",
+      "bytes": 15524,
+      "sha256": "dda6f81ff43bcf1eb226127db753196d55974a59ee264b1919376b276dd36ae7"
+    },
+    {
+      "config": "overtraining-forecast",
+      "bytes": 18279,
+      "sha256": "42492f881c894f66161596b6e38838142783ae16226e746707e0bfc53dfd200f"
+    }
+  ]
+}

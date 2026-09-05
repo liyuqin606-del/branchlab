@@ -1,0 +1,41 @@
+{
+  "format_version": 1,
+  "inputs": {
+    "summary.json": {
+      "bytes": 51768,
+      "sha256": "60daa398b5bad9463817bbef0b6716099afcc537e209cdd76f0e46069c8b35b2"
+    },
+    "run.json": {
+      "bytes": 640,
+      "sha256": "942f4c477fa9e04e57102252dab8e50f085ce7d625a38b2ae8eefb2ce8db0507"
+    },
+    "history.json": {
+      "bytes": 2829,
+      "sha256": "b1e07f3b1506b44972fa75f7c465efd1b65ea54832feaa782c72b04ac2b17f46"
+    },
+    "benchmark.json": {
+      "bytes": 1958,
+      "sha256": "edd065e3da566eaf8ab608258638f6b0dc39ae40f7624a21de3e50b8125ac4a4"
+    }
+  },
+  "missing_optional_inputs": [],
+  "generated": {
+    "training_curve.png": {
+      "bytes": 56628,
+      "sha256": "07e4640e00188bb1c675beb4476a2dd93cb537cc06ab20d728a9a01ed1b3dc5e"
+    },
+    "audit_loss.png": {
+      "bytes": 136830,
+      "sha256": "a81f40136c98c907a86485e5b2852335a36c5475afe372d3e30e445be3b1d3c9"
+    },
+    "REPORT.md": {
+      "bytes": 9296,
+      "sha256": "abae4bc498fe26248512d46ba28523bcfbf3ff346034b821cbf90305d2ac4280"
+    },
+    "resume_zh.md": {
+      "bytes": 1347,
+      "sha256": "e7dd78f147ace5b777b938619756315704008f5ba7134d4967dc9d2b98657dcd"
+    }
+  },
+  "note": "Hashes bind measured inputs and generated outputs; they do not establish scientific validity."
+}

@@ -1,0 +1,57 @@
+{
+  "prefill_seconds": 0.013643416998093016,
+  "cached_decode_tokens_per_second": 155.54613096784848,
+  "uncached_decode_tokens_per_second": 58.71975336487851,
+  "decode_speedup": 2.648957498191466,
+  "logits_max_diff": 1.33514404296875e-05,
+  "prefill_seconds_samples": [
+    0.01398795799468644,
+    0.013407958002062514,
+    0.01286641698970925,
+    0.013643416998093016,
+    0.013667999999597669
+  ],
+  "cached_decode_seconds_samples": [
+    0.20722095800738316,
+    0.2057267500058515,
+    0.20556437500636093,
+    0.20556954201310873,
+    0.20954529198934324
+  ],
+  "uncached_decode_seconds_samples": [
+    0.5454246669978602,
+    0.5413891250063898,
+    0.5423832920059795,
+    0.5449614170065615,
+    0.559564083989244
+  ],
+  "peak_memory": {
+    "available": false,
+    "metric": null,
+    "cached_bytes": null,
+    "uncached_bytes": null,
+    "scope": "Absolute live tensor allocation including model and inputs; no allocator-reserved memory",
+    "unavailable_reason": "No comparable per-trial peak allocator counter exposed for CPU/MPS"
+  },
+  "metadata": {
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "batch_size": 1,
+    "prompt_tokens": 64,
+    "decode_tokens_per_sequence": 32,
+    "timed_tokens_per_trial": 32,
+    "repeats": 5,
+    "warmup_runs_per_path": 1,
+    "aggregation": "median seconds, throughput = batch tokens / median seconds",
+    "prefill_in_decode_timing": false,
+    "continuation": "Fixed arithmetic token IDs shared by both paths; no sampling",
+    "torch_version": "2.8.0",
+    "cpu_threads": 4,
+    "attention_implementation": "manual causal attention",
+    "model_artifact": "artifacts/showcase/model.pt",
+    "model_sha256": "500275077f293d8b0789de76165415fff003dadfe5e10b0fef04d24073fcabb7",
+    "tokenizer_sha256": "6c15c694cab31d5901049fc38b0c498670960d121cca5ae4273b957c1269e9c2",
+    "prompt_sha256": "0cd2ee41677be19c87e6b0777a84b2f7aabdd54d64787c2e2b6be3afcf52d7f5",
+    "parameters": 19140096
+  }
+}

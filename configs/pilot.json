@@ -1,0 +1,17 @@
+{
+  "model": {"d_model":160,"n_layers":3,"n_heads":8,"max_seq_len":128},
+  "seeds": {"discovery":[0,1,2],"development":[3,4],"test":[5,6,7]},
+  "baseline_steps": 120,
+  "batch_size":4,
+  "seq_len":64,
+  "lr":0.001,
+  "conditions":["clean","high_lr","opposed_momentum"],
+  "repair_actions":["keep","lr_half","momentum_zero"],
+  "repair_horizon":24,
+  "audit_budget_forward_batches":160,
+  "max_repair_steps":52,
+  "search_budget_cells":150,
+  "max_probes":2,
+  "search_seeds":[0,1,2],
+  "scope":"Controlled training perturbations; finite diagnostic grammar; exploratory pilot"
+}
