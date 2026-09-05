@@ -1,0 +1,2460 @@
+{
+  "format_version": 1,
+  "learner": "value_aware_single_probe",
+  "parameters": {
+    "strategy": "counterexample",
+    "search_budget_cells": 180,
+    "seed": 0,
+    "ridge_alpha": 1.0,
+    "gate_margin": 0.0,
+    "min_improvement": 0.0,
+    "counterexample_count": 6
+  },
+  "selected_probe": null,
+  "probe_cost": 0,
+  "always_probe": false,
+  "base_budget_cost": 0,
+  "free": {
+    "mean": [
+      0.9375,
+      0.21875,
+      0.4375,
+      0.9956874591964029,
+      0.26630684128031135,
+      -6.907755278982137,
+      3.534096322953701,
+      1.1782711800187826,
+      3.525728424079716,
+      0.14640255305698943,
+      -0.04884106665849686,
+      0.9894730225205421,
+      0.2547729127109051,
+      0.07343852118356153,
+      0.9539368767291307,
+      0.24474492808803916,
+      0.07751584431389347,
+      0.013949387153843418,
+      0.004077955287357327,
+      0.09017255047183426,
+      0.17768714809790254,
+      0.04924785590264946,
+      0.07424306668349345,
+      0.09010769333690405,
+      0.02753489516908303,
+      0.026183125941315666,
+      0.0044088527210988104,
+      0.0009478914726059884,
+      -0.07165948394685984,
+      0.0322821966256015,
+      0.009381135809235275,
+      -0.12238977478409652,
+      0.030008237983565778,
+      0.008185326936654747,
+      -0.1794308265671134,
+      0.05421194003429264,
+      0.013889548339648172,
+      -0.04224529701883739,
+      0.002808539435136481,
+      0.0007616624370712088,
+      -0.16416676272638142,
+      0.0387145210406743,
+      0.011479635344585404,
+      -0.09147366159595549,
+      0.042054505785927176,
+      0.012688770686509088,
+      -0.049242602777667344,
+      0.0034643006583792157,
+      0.0008253456071543042,
+      -0.05022749281488359,
+      0.0313045111251995,
+      0.008460719385766424,
+      -0.12170799705199897,
+      0.029007425415329635,
+      0.007718533670413308,
+      -0.11148710030829534,
+      0.0757118008332327,
+      0.015417521295603365,
+      0.06835653539747,
+      0.002128742740751477,
+      0.000512094681198505,
+      0.23118205246282741,
+      0.04142854566453025,
+      0.00907422963064164,
+      0.11148028782918118,
+      0.030804636829998344,
+      0.008244648968684487,
+      0.0028521347558125854,
+      0.0035795470830635168,
+      0.000772698299442709,
+      0.0759024245198816,
+      0.030193329381290823,
+      0.007862562575610355,
+      0.0970051642616454,
+      0.02734067675191909,
+      0.007454065933416132,
+      0.08086220436962321,
+      0.08130679256282747,
+      0.01779653606354259,
+      0.08091770781902596,
+      0.02562854965799488,
+      0.006886008508445229,
+      0.03955456562107429,
+      -0.02896677248645574,
+      0.3242521968204528,
+      -0.09836768731474876,
+      -0.014483387290965766,
+      0.16212610166985542,
+      -0.09836769162211567,
+      -0.0254681353981141,
+      0.08441879181191325,
+      -0.3070318358950317
+    ],
+    "scale": [
+      0.16535945694153692,
+      0.23175620272173947,
+      0.46351240544347894,
+      0.03576610321486671,
+      0.017616891114382152,
+      0.3465735902799727,
+      0.15774997928492906,
+      0.2678460186595627,
+      0.10069861757024073,
+      0.03265226413311286,
+      0.2351717371655054,
+      0.019251933964756412,
+      0.028404025210975712,
+      0.16840230760006805,
+      0.020517618469569752,
+      0.028123963793395917,
+      0.17879611215136854,
+      0.002916450921192519,
+      0.0006551099023668565,
+      0.2647021967510948,
+      0.01842089976012022,
+      0.007269263125546704,
+      0.14726269441916368,
+      0.021223193053094377,
+      0.005742319707624328,
+      0.152392714486349,
+      0.0018574057143544292,
+      0.0007608878238106054,
+      0.6578995237997148,
+      0.012933858874431787,
+      0.0047618584902682426,
+      0.44745283837661026,
+      0.009260693723533877,
+      0.0036915737267838723,
+      0.40650133890628426,
+      0.010680193657812642,
+      0.0032314463093908526,
+      0.23822906901162266,
+      0.001863517582854961,
+      0.0005371539585271487,
+      0.6470131283192486,
+      0.015492411032741488,
+      0.004948148266714924,
+      0.4424104431484855,
+      0.011053489862684366,
+      0.003747020471578745,
+      0.2085393322091673,
+      0.0003955935025821775,
+      0.0002991896532225904,
+      0.47008313862363765,
+      0.006883727146322623,
+      0.002264850195380301,
+      0.31284853893731795,
+      0.00875209738833021,
+      0.0020937750069637082,
+      0.2802058327857633,
+      0.012706109222786645,
+      0.0036113989653713346,
+      0.31735556543133503,
+      0.0009406208880878168,
+      0.00021198824122561948,
+      0.390449123648155,
+      0.017159843260964987,
+      0.0023038567464718916,
+      0.21045886023005345,
+      0.004932885524971957,
+      0.0017057581013337967,
+      0.19005340667904344,
+      0.0014882180620412486,
+      0.0002334319227713513,
+      0.42692523788406683,
+      0.007182373437559843,
+      0.0018186923507127748,
+      0.2860676427451668,
+      0.00729780549135576,
+      0.002450154232936389,
+      0.3346950604425228,
+      0.011510590343390201,
+      0.004272575224532497,
+      0.18054875959054664,
+      0.006619919708584021,
+      0.001275838340679207,
+      0.5230830076714678,
+      0.013212397099271902,
+      0.13124126915613626,
+      0.03526978577414493,
+      0.006606197912250091,
+      0.06562063711861073,
+      0.03526978083832685,
+      0.009376054269400321,
+      0.03138996002825776,
+      0.030183010129829543
+    ],
+    "coef": [
+      [
+        -0.00956278146280716,
+        -0.010328571980966733,
+        -0.010273077223263543
+      ],
+      [
+        -0.0032653260053964236,
+        -0.003441340346294915,
+        -0.00454448078407319
+      ],
+      [
+        -0.004528885465124939,
+        -0.004837549376129979,
+        -0.005125140017318615
+      ],
+      [
+        0.0005978330853230263,
+        0.0004932644610702915,
+        0.0006165493927330279
+      ],
+      [
+        -0.003233147925712848,
+        -0.001389151996178585,
+        -0.0031030811364772533
+      ],
+      [
+        -0.003285572788245301,
+        -0.0023882240780903046,
+        0.002867999595776858
+      ],
+      [
+        0.005335147972950678,
+        0.006233606108151213,
+        0.006103153619019798
+      ],
+      [
+        0.004627763046856184,
+        0.005048995813265933,
+        0.004982079400515059
+      ],
+      [
+        0.009040226778597926,
+        0.009660455226479852,
+        0.00954831762935355
+      ],
+      [
+        -0.004096412837948827,
+        -0.005033270368691936,
+        -0.0051623600329820515
+      ],
+      [
+        0.0002470638787903404,
+        0.0013594926094031843,
+        0.0008952038827509319
+      ],
+      [
+        0.001352824531723226,
+        0.0020699677911031424,
+        0.0019116160697447023
+      ],
+      [
+        0.0006634940344213058,
+        0.0006208162323360622,
+        -2.728116021388418e-05
+      ],
+      [
+        0.00042051357610090956,
+        0.00017578329026183819,
+        0.00048441541502037324
+      ],
+      [
+        0.0015707989317355522,
+        0.0021709263331382072,
+        0.002256739552751107
+      ],
+      [
+        0.0008598688898630748,
+        0.0008402938232766728,
+        0.0001221992742225602
+      ],
+      [
+        0.00035452677025847574,
+        0.00010273660514951927,
+        0.0005042363099939154
+      ],
+      [
+        0.0023799615466514085,
+        0.0027059742388509844,
+        0.0031084165131100533
+      ],
+      [
+        0.0006895169502186315,
+        0.0009878812243859973,
+        0.0002850359708433489
+      ],
+      [
+        0.00016610297502094793,
+        -0.00020031447196506796,
+        -0.0011684139475128296
+      ],
+      [
+        -0.004054082066885619,
+        -0.0038319338137446884,
+        -0.004442929358917549
+      ],
+      [
+        -0.0021294843910149006,
+        -0.002572194508146763,
+        -0.0028752087386869495
+      ],
+      [
+        0.0019511165604719249,
+        0.0034606966382627123,
+        0.0016750350236936328
+      ],
+      [
+        0.001891873835393417,
+        0.002083011228683575,
+        0.0017241767474501536
+      ],
+      [
+        0.0004149341916379067,
+        0.00026012992973037315,
+        0.0005293711390024157
+      ],
+      [
+        -0.0018776317873384681,
+        -0.0019810626603024377,
+        -0.0024492014168198697
+      ],
+      [
+        9.502650707681152e-05,
+        0.0011500848602899634,
+        0.00022785029524481225
+      ],
+      [
+        -0.0023827907297845367,
+        -0.0023480477446694336,
+        -0.0017668669466471166
+      ],
+      [
+        0.0005625422921358026,
+        -0.0002145332376026608,
+        9.50346815531238e-06
+      ],
+      [
+        0.0016851014007658938,
+        0.0023723893824576904,
+        0.001484373532645441
+      ],
+      [
+        -0.001580203817422538,
+        -0.0014706061688646833,
+        -0.0013421399089410422
+      ],
+      [
+        0.001858736329514525,
+        0.001143690905192579,
+        0.0012365815636100066
+      ],
+      [
+        0.001496790710416883,
+        0.002232165273497178,
+        0.0012433822831321485
+      ],
+      [
+        -0.001925407976812825,
+        -0.001825461067537982,
+        -0.0012905360998715148
+      ],
+      [
+        0.0012681506936880285,
+        0.0005387045537189915,
+        0.0002829952448201551
+      ],
+      [
+        -0.0004968513452812427,
+        -0.00041400576830369655,
+        -0.0006355333169342811
+      ],
+      [
+        -0.0011905157448452747,
+        -0.0009944842546693784,
+        -0.0002473950874853444
+      ],
+      [
+        -0.0008581844685221322,
+        -0.0011471242953339385,
+        -0.001875861541588651
+      ],
+      [
+        -7.169615901182804e-05,
+        0.0008002717301497743,
+        -2.813833073424951e-05
+      ],
+      [
+        -0.0010868989599416667,
+        -0.0011018034025376074,
+        -0.0008896647944933826
+      ],
+      [
+        0.003004827138998906,
+        0.00251815753101268,
+        0.00336699511710878
+      ],
+      [
+        0.0010009987189944377,
+        0.002275183194823601,
+        0.001257508641955025
+      ],
+      [
+        -0.0007520195025439713,
+        -0.00089390140748448,
+        -0.000822547929610219
+      ],
+      [
+        0.0015215016220576447,
+        0.0011252497975727115,
+        0.0014064478832807468
+      ],
+      [
+        0.003269773859273825,
+        0.004062388986026315,
+        0.0036658787640273375
+      ],
+      [
+        0.0011942505407147857,
+        0.0013295578102584546,
+        0.001618279464604879
+      ],
+      [
+        -0.0001144223815276907,
+        -0.0006515939846990587,
+        -0.0009248298467287006
+      ],
+      [
+        0.0005563029006600797,
+        0.00015027035392786467,
+        0.0006100656531667255
+      ],
+      [
+        -0.0009225872109437086,
+        -0.0004052977562173572,
+        -0.0006213628350202656
+      ],
+      [
+        0.001343469790416119,
+        0.0012184678978590339,
+        0.001349467634436966
+      ],
+      [
+        0.005355436079419408,
+        0.004285070213071635,
+        0.005311240388113299
+      ],
+      [
+        0.0004393889566603286,
+        0.0007530166506896777,
+        0.0002887111402932249
+      ],
+      [
+        6.0097369854972506e-05,
+        0.0001210044876313037,
+        -0.00015034518383159288
+      ],
+      [
+        0.00349991792501587,
+        0.0020097375102050203,
+        0.0030307139121791824
+      ],
+      [
+        0.0007848126902715308,
+        0.0009830038325303152,
+        0.0009783192445040473
+      ],
+      [
+        0.0005942096842215976,
+        0.00043463325359327157,
+        0.0001702346263801585
+      ],
+      [
+        0.00047437390999159894,
+        -0.0004103463902590705,
+        0.0004682119166356274
+      ],
+      [
+        0.0004470120065701248,
+        0.0009045813454518414,
+        0.0010384254296111166
+      ],
+      [
+        -0.0006284973414410573,
+        -0.0004800740364097838,
+        -0.0005489793647848608
+      ],
+      [
+        -0.0019739488040573256,
+        -0.001159139040011287,
+        -0.0023066622485390185
+      ],
+      [
+        -0.0008046044720482029,
+        -0.0007060674009031267,
+        -0.0006765926855205038
+      ],
+      [
+        -0.0032663666963015873,
+        -0.00303698812646603,
+        -0.0027133143976612413
+      ],
+      [
+        -0.0011270148422720975,
+        -0.0010992739258545395,
+        -0.0015271395130495742
+      ],
+      [
+        -0.00044854145739458174,
+        -0.0008767446573634442,
+        -0.0008406657241508703
+      ],
+      [
+        -0.0028341197754093985,
+        -0.0037598899631242056,
+        -0.002550633079668796
+      ],
+      [
+        0.002557962793494659,
+        0.0035039551965083526,
+        0.002819263633173526
+      ],
+      [
+        0.001114438947300496,
+        0.0003136052665028473,
+        -0.00021356367952477404
+      ],
+      [
+        -0.001208029080555371,
+        -0.001263372045265516,
+        -0.0016607314514495584
+      ],
+      [
+        -0.0021107418272432988,
+        -0.003194972276321404,
+        -0.0030859688396345274
+      ],
+      [
+        0.0002585906618100424,
+        -0.00014327217828818866,
+        0.00016952463534976127
+      ],
+      [
+        0.0009844004195669767,
+        0.0004058805994325154,
+        0.0003931666452107634
+      ],
+      [
+        0.003357593903457606,
+        0.0025111301302557353,
+        0.0030877324649436644
+      ],
+      [
+        0.0005018733176095025,
+        0.00013772208555121136,
+        -0.00011733763240010645
+      ],
+      [
+        -0.0014816283268704676,
+        -0.0003247630945310487,
+        -0.00011904739342753361
+      ],
+      [
+        0.0015201774357774737,
+        0.0008189468515176646,
+        0.0010418504033876581
+      ],
+      [
+        3.1566167215825275e-05,
+        -0.00043264647344519057,
+        -0.0008087464718487726
+      ],
+      [
+        -0.0004933609630956763,
+        0.0003428614110743438,
+        0.0003886577214643352
+      ],
+      [
+        -0.0043308448739234895,
+        -0.005355858684477445,
+        -0.005372204695020562
+      ],
+      [
+        -0.0031204534372695773,
+        -0.0036322233928424413,
+        -0.0028735235999143393
+      ],
+      [
+        0.0007511850061779209,
+        0.0015470242583160779,
+        0.0013384956028524052
+      ],
+      [
+        -0.0036022414893294875,
+        -0.003282329231457912,
+        -0.0036698746682340315
+      ],
+      [
+        0.0016771199648453086,
+        0.0028427917194481455,
+        0.001091256015763528
+      ],
+      [
+        -0.0003646628718876519,
+        -0.0011014857141635494,
+        -0.0012676538304005442
+      ],
+      [
+        0.0034871435565485397,
+        0.0010036620975242912,
+        0.004004739312908148
+      ],
+      [
+        0.000344354716115325,
+        -0.0012485327069017347,
+        0.0017416003224630604
+      ],
+      [
+        -0.0021538250662292134,
+        -0.0024447898820918914,
+        -0.0028693540548727164
+      ],
+      [
+        0.0034871491801070475,
+        0.0010036618663871776,
+        0.0040047409269986095
+      ],
+      [
+        0.0003443412914949576,
+        -0.0012485334065594866,
+        0.0017415921509245152
+      ],
+      [
+        -0.0021538348013215823,
+        -0.002444781390043915,
+        -0.0028693646195064445
+      ],
+      [
+        -0.014061567468259789,
+        -0.004024851219216766,
+        -0.008884091929864894
+      ],
+      [
+        0.012454940292261962,
+        0.003784162028329864,
+        0.009271553746089761
+      ],
+      [
+        0.001963174602849692,
+        0.002257902124176209,
+        0.0023896794068866164
+      ]
+    ],
+    "intercept": [
+      3.4869058281183243,
+      3.4720809892751276,
+      3.4915605382993817
+    ]
+  },
+  "head": null,
+  "gate": null,
+  "history": [
+    {
+      "candidate": null,
+      "development_net_loss": 3.4661510611573854,
+      "promoted": false
+    },
+    {
+      "candidate": "momentum_zero:2:next_batch_loss",
+      "development_net_loss": 3.4661510611573854,
+      "development_probe_episodes": 0,
+      "promoted": false,
+      "revealed_cells": 68,
+      "crossfit_net_gains": [
+        -0.001408889889717102,
+        -0.0010835528373718262,
+        -0.015446886420249939,
+        -0.0006723701953887939,
+        -0.0013495087623596191,
+        0.002185255289077759,
+        -0.0009795278310775757,
+        -0.0006913691759109497,
+        -0.0015342384576797485,
+        -0.004874110221862793,
+        0.001015305519104004,
+        -0.0021525919437408447,
+        -0.002431139349937439,
+        -0.003469794988632202,
+        -0.002140432596206665,
+        -0.002111390233039856,
+        0.0007543712854385376,
+        0.001086890697479248,
+        -0.0011273324489593506,
+        -0.00019441545009613037,
+        0.0022537261247634888,
+        -0.0014400184154510498,
+        0.00010918080806732178,
+        -0.0001955479383468628,
+        -0.0069023966789245605,
+        -0.0039344727993011475,
+        -0.00572928786277771,
+        -0.006818443536758423,
+        -0.00572928786277771,
+        -0.0030634254217147827,
+        -0.005522698163986206,
+        -0.006570830941200256
+      ]
+    },
+    {
+      "candidate": "momentum_zero:4:next_batch_loss",
+      "development_net_loss": 3.4661510611573854,
+      "development_probe_episodes": 0,
+      "promoted": false,
+      "revealed_cells": 94,
+      "crossfit_net_gains": [
+        -0.001408889889717102,
+        -0.0010835528373718262,
+        -0.0013495087623596191,
+        -0.0006723701953887939,
+        -0.0013495087623596191,
+        0.002185255289077759,
+        -0.0009795278310775757,
+        -0.0006913691759109497,
+        -0.0015342384576797485,
+        -0.004874110221862793,
+        0.001015305519104004,
+        -0.0021525919437408447,
+        -0.002431139349937439,
+        -0.003469794988632202,
+        -0.002140432596206665,
+        -0.002111390233039856,
+        0.0007543712854385376,
+        0.001086890697479248,
+        -0.0011273324489593506,
+        -0.00019441545009613037,
+        0.0022537261247634888,
+        -0.0014400184154510498,
+        0.00010918080806732178,
+        -0.0001955479383468628,
+        -0.0069023966789245605,
+        -0.0039344727993011475,
+        -0.00572928786277771,
+        -0.006818443536758423,
+        -0.00572928786277771,
+        -0.0030634254217147827,
+        -0.005522698163986206,
+        -0.006570830941200256
+      ]
+    },
+    {
+      "candidate": "momentum_zero:1:next_batch_loss",
+      "development_net_loss": 3.4661510611573854,
+      "development_probe_episodes": 0,
+      "promoted": false,
+      "revealed_cells": 120,
+      "crossfit_net_gains": [
+        -0.001408889889717102,
+        -0.0010835528373718262,
+        -0.015446886420249939,
+        -0.0006723701953887939,
+        -0.0013495087623596191,
+        0.002185255289077759,
+        -0.0009795278310775757,
+        -0.0006913691759109497,
+        -0.0015342384576797485,
+        -0.004874110221862793,
+        0.001015305519104004,
+        -0.0021525919437408447,
+        -0.002431139349937439,
+        -0.0028512030839920044,
+        -0.002140432596206665,
+        -0.002111390233039856,
+        0.0007543712854385376,
+        0.001086890697479248,
+        -0.0011273324489593506,
+        -0.00019441545009613037,
+        0.0022537261247634888,
+        -0.0014400184154510498,
+        0.00010918080806732178,
+        -0.0001955479383468628,
+        -0.0069023966789245605,
+        -0.0039344727993011475,
+        -0.00572928786277771,
+        -0.006818443536758423,
+        -0.00572928786277771,
+        -0.0030634254217147827,
+        -0.005522698163986206,
+        -0.006570830941200256
+      ]
+    },
+    {
+      "candidate": "lr_half:8:next_batch_loss",
+      "development_net_loss": 3.4661510611573854,
+      "development_probe_episodes": 0,
+      "promoted": false,
+      "revealed_cells": 146,
+      "crossfit_net_gains": [
+        -0.001408889889717102,
+        -0.0010835528373718262,
+        -0.0013495087623596191,
+        -0.0006723701953887939,
+        -0.0013495087623596191,
+        0.002185255289077759,
+        -0.0009795278310775757,
+        -0.0006913691759109497,
+        -0.0015342384576797485,
+        -0.004874110221862793,
+        0.001015305519104004,
+        -0.0021525919437408447,
+        -0.002431139349937439,
+        -0.003469794988632202,
+        -0.002140432596206665,
+        -0.002111390233039856,
+        0.0007543712854385376,
+        0.001086890697479248,
+        -0.0011273324489593506,
+        -0.00019441545009613037,
+        0.0022537261247634888,
+        -0.0014400184154510498,
+        0.00010918080806732178,
+        -0.0001955479383468628,
+        -0.0069023966789245605,
+        -0.0039344727993011475,
+        -0.00572928786277771,
+        -0.006818443536758423,
+        -0.00572928786277771,
+        -0.0030634254217147827,
+        -0.005522698163986206,
+        -0.006570830941200256
+      ]
+    },
+    {
+      "candidate": "lr_half:2:next_batch_loss",
+      "development_net_loss": 3.4661510611573854,
+      "development_probe_episodes": 0,
+      "promoted": false,
+      "revealed_cells": 172,
+      "crossfit_net_gains": [
+        -0.001408889889717102,
+        -0.0010835528373718262,
+        -0.0013495087623596191,
+        -0.0006723701953887939,
+        -0.0013495087623596191,
+        0.002185255289077759,
+        -0.0009795278310775757,
+        -0.0006913691759109497,
+        -0.0015342384576797485,
+        -0.004874110221862793,
+        0.001015305519104004,
+        -0.0021525919437408447,
+        -0.002431139349937439,
+        -0.003469794988632202,
+        -0.002140432596206665,
+        -0.002111390233039856,
+        0.0007543712854385376,
+        0.001086890697479248,
+        -0.0011273324489593506,
+        -0.00019441545009613037,
+        0.0022537261247634888,
+        -0.0014400184154510498,
+        0.00010918080806732178,
+        -0.0001955479383468628,
+        -0.0069023966789245605,
+        -0.0039344727993011475,
+        -0.00572928786277771,
+        -0.006818443536758423,
+        -0.00572928786277771,
+        -0.0030634254217147827,
+        -0.005522698163986206,
+        -0.006570830941200256
+      ]
+    }
+  ],
+  "search_report": {
+    "budget_cells": 180,
+    "revealed_cells": 172,
+    "revealed_scalars": 172,
+    "replay_probe_cost": 344,
+    "queries": [
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_counterexample_scout",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:4:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-blend_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_double",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_half",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_160",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_40",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_80",
+        "split": "discovery",
+        "probe_id": "momentum_zero:1:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:8:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-native_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-008-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-009-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-010-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-blend_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_double",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-lr_half",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-matched_stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-native_160",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_40",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      },
+      {
+        "episode_id": "discovery-011-stale_80",
+        "split": "discovery",
+        "probe_id": "lr_half:2:next_batch_loss",
+        "cost": 2,
+        "phase": "discovery_head_and_crossfit",
+        "scalars": 1
+      }
+    ],
+    "cost_scope": "Unique vector queries in replay; actual table collection is separate",
+    "strategy": "counterexample",
+    "candidate_count": 8,
+    "baseline_development_net_loss": 3.4661510611573854,
+    "selected_development_net_loss": 3.4661510611573854,
+    "selection_split": "development",
+    "fit_split": "discovery",
+    "gate_crossfit_unit": "whole discovery training seed",
+    "crossfit_folds": [
+      {
+        "training_seeds": [
+          11,
+          8,
+          9
+        ],
+        "holdout_seed": 10,
+        "training_ids": [
+          "discovery-008-blend_80",
+          "discovery-008-lr_double",
+          "discovery-008-lr_half",
+          "discovery-008-matched_stale_80",
+          "discovery-008-native_160",
+          "discovery-008-native_80",
+          "discovery-008-stale_40",
+          "discovery-008-stale_80",
+          "discovery-009-blend_80",
+          "discovery-009-lr_double",
+          "discovery-009-lr_half",
+          "discovery-009-matched_stale_80",
+          "discovery-009-native_160",
+          "discovery-009-native_80",
+          "discovery-009-stale_40",
+          "discovery-009-stale_80",
+          "discovery-011-blend_80",
+          "discovery-011-lr_double",
+          "discovery-011-lr_half",
+          "discovery-011-matched_stale_80",
+          "discovery-011-native_160",
+          "discovery-011-native_80",
+          "discovery-011-stale_40",
+          "discovery-011-stale_80"
+        ],
+        "holdout_ids": [
+          "discovery-010-blend_80",
+          "discovery-010-lr_double",
+          "discovery-010-lr_half",
+          "discovery-010-matched_stale_80",
+          "discovery-010-native_160",
+          "discovery-010-native_80",
+          "discovery-010-stale_40",
+          "discovery-010-stale_80"
+        ]
+      },
+      {
+        "training_seeds": [
+          10,
+          8,
+          9
+        ],
+        "holdout_seed": 11,
+        "training_ids": [
+          "discovery-008-blend_80",
+          "discovery-008-lr_double",
+          "discovery-008-lr_half",
+          "discovery-008-matched_stale_80",
+          "discovery-008-native_160",
+          "discovery-008-native_80",
+          "discovery-008-stale_40",
+          "discovery-008-stale_80",
+          "discovery-009-blend_80",
+          "discovery-009-lr_double",
+          "discovery-009-lr_half",
+          "discovery-009-matched_stale_80",
+          "discovery-009-native_160",
+          "discovery-009-native_80",
+          "discovery-009-stale_40",
+          "discovery-009-stale_80",
+          "discovery-010-blend_80",
+          "discovery-010-lr_double",
+          "discovery-010-lr_half",
+          "discovery-010-matched_stale_80",
+          "discovery-010-native_160",
+          "discovery-010-native_80",
+          "discovery-010-stale_40",
+          "discovery-010-stale_80"
+        ],
+        "holdout_ids": [
+          "discovery-011-blend_80",
+          "discovery-011-lr_double",
+          "discovery-011-lr_half",
+          "discovery-011-matched_stale_80",
+          "discovery-011-native_160",
+          "discovery-011-native_80",
+          "discovery-011-stale_40",
+          "discovery-011-stale_80"
+        ]
+      },
+      {
+        "training_seeds": [
+          10,
+          11,
+          9
+        ],
+        "holdout_seed": 8,
+        "training_ids": [
+          "discovery-009-blend_80",
+          "discovery-009-lr_double",
+          "discovery-009-lr_half",
+          "discovery-009-matched_stale_80",
+          "discovery-009-native_160",
+          "discovery-009-native_80",
+          "discovery-009-stale_40",
+          "discovery-009-stale_80",
+          "discovery-010-blend_80",
+          "discovery-010-lr_double",
+          "discovery-010-lr_half",
+          "discovery-010-matched_stale_80",
+          "discovery-010-native_160",
+          "discovery-010-native_80",
+          "discovery-010-stale_40",
+          "discovery-010-stale_80",
+          "discovery-011-blend_80",
+          "discovery-011-lr_double",
+          "discovery-011-lr_half",
+          "discovery-011-matched_stale_80",
+          "discovery-011-native_160",
+          "discovery-011-native_80",
+          "discovery-011-stale_40",
+          "discovery-011-stale_80"
+        ],
+        "holdout_ids": [
+          "discovery-008-blend_80",
+          "discovery-008-lr_double",
+          "discovery-008-lr_half",
+          "discovery-008-matched_stale_80",
+          "discovery-008-native_160",
+          "discovery-008-native_80",
+          "discovery-008-stale_40",
+          "discovery-008-stale_80"
+        ]
+      },
+      {
+        "training_seeds": [
+          10,
+          11,
+          8
+        ],
+        "holdout_seed": 9,
+        "training_ids": [
+          "discovery-008-blend_80",
+          "discovery-008-lr_double",
+          "discovery-008-lr_half",
+          "discovery-008-matched_stale_80",
+          "discovery-008-native_160",
+          "discovery-008-native_80",
+          "discovery-008-stale_40",
+          "discovery-008-stale_80",
+          "discovery-010-blend_80",
+          "discovery-010-lr_double",
+          "discovery-010-lr_half",
+          "discovery-010-matched_stale_80",
+          "discovery-010-native_160",
+          "discovery-010-native_80",
+          "discovery-010-stale_40",
+          "discovery-010-stale_80",
+          "discovery-011-blend_80",
+          "discovery-011-lr_double",
+          "discovery-011-lr_half",
+          "discovery-011-matched_stale_80",
+          "discovery-011-native_160",
+          "discovery-011-native_80",
+          "discovery-011-stale_40",
+          "discovery-011-stale_80"
+        ],
+        "holdout_ids": [
+          "discovery-009-blend_80",
+          "discovery-009-lr_double",
+          "discovery-009-lr_half",
+          "discovery-009-matched_stale_80",
+          "discovery-009-native_160",
+          "discovery-009-native_80",
+          "discovery-009-stale_40",
+          "discovery-009-stale_80"
+        ]
+      }
+    ],
+    "test_used_for_selection": false,
+    "objective": "cost-adjusted remaining-horizon dev-text loss"
+  }
+}

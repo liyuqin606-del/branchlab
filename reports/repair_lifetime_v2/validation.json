@@ -1,0 +1,70 @@
+{
+  "code_and_protocol_match": [
+    {
+      "path": "scripts/audit_repair_lifetime.py",
+      "matches": true
+    },
+    {
+      "path": "protocols/repair_lifetime_v2.md",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/value_aware.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/benchmark.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/experiments_v2.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/model.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/tokenizer.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/experiments.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/cli.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/lookahead.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/optim.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/training.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/data.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/reporting.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/synthesis.py",
+      "matches": true
+    }
+  ],
+  "all336endpoint_values_bitwise_equal": true,
+  "confirmatory": false
+}

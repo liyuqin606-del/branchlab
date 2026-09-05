@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-09-05T10:31:12.806063+00:00",
+  "confirmatory": false,
+  "purpose": "Development-only repair lifetime audit; original NOGO/gates remain unchanged",
+  "source_files": {
+    "artifacts/development_v2/config.json": "c68d1bb50b67ed23a2d4a22f8531e05b5e79d8ea55ef33eedb92d6d9ef148036",
+    "artifacts/development_v2/episodes.json": "d238ac31fa505918083f33b3ddf87c63ca64d29064daac31da30544ebb72c9a6",
+    "artifacts/development_v2/curves.json": "0f0dc314b87e039883119dcd1ddc22e957b399b236b65ecc92c6ce9ec6cd802c",
+    "artifacts/development_v2/freeze.json": "db39776b63eec3bc6bce77eea2694d22506f04587ed9263d122f4b8e0639b7d2",
+    "artifacts/development_v2/collection.json": "1a6f6db19d906a6de1cd272da120861ed1276a535dffb23db29b11aabca7136e"
+  },
+  "checkpoints": {
+    "8": {
+      "path": "artifacts/development_v2/checkpoints/seed-8.pt",
+      "sha256": "53b2e6c3986c5ed1ec9faa9cb41f3bb6c6e6d9df8aa926e4d4294a70fb517f45"
+    },
+    "9": {
+      "path": "artifacts/development_v2/checkpoints/seed-9.pt",
+      "sha256": "c5294dc09bf9e045563ab3b3325d536575ce649cb5fe348d0e36373df03d22f7"
+    },
+    "10": {
+      "path": "artifacts/development_v2/checkpoints/seed-10.pt",
+      "sha256": "f12fff17d3b7f09761374312d06942c724fc8d81ba62e8c0aa0a315855bdd746"
+    },
+    "11": {
+      "path": "artifacts/development_v2/checkpoints/seed-11.pt",
+      "sha256": "53f0992a63eae08cbf6fb17a55bca207e964462de37c35e5530bb973b739893f"
+    },
+    "12": {
+      "path": "artifacts/development_v2/checkpoints/seed-12.pt",
+      "sha256": "3138dfa7d132363e10c9bc1f771de75ce78571ce34326d04ad33d67542747a42"
+    },
+    "13": {
+      "path": "artifacts/development_v2/checkpoints/seed-13.pt",
+      "sha256": "5700529b22d5f85970934247de4180c79007cc35ae3071f8d767e4d96d910b35"
+    },
+    "14": {
+      "path": "artifacts/development_v2/checkpoints/seed-14.pt",
+      "sha256": "8777551f614c04ede3ffc791ab18ac3010658c84f8b6d701f86a8aee518f359d"
+    }
+  },
+  "inputs": {
+    "tokenizer.json": "6c15c694cab31d5901049fc38b0c498670960d121cca5ae4273b957c1269e9c2",
+    "train_tokens.npy": "74bcbfec2c442d6a31008152bb1098e13ec33ce472da3e64766e5830b526d836",
+    "dev_tokens.npy": "3e953134b0a6f1d26491e4e978b914ade4a9a81ea150480d29b1373fcc917acb"
+  },
+  "code_and_protocol": {
+    "scripts/audit_repair_lifetime.py": "e7a1c455decad8c660948b436d95c42979eec735737020f64debcd9041ffcf22",
+    "protocols/repair_lifetime_v2.md": "cb9d6706e7202f82f281f847d3e88401e6506717d49c4c261edb6d9bf5cc71ee",
+    "src/branchlab/value_aware.py": "5b7090e4af7d925f5139ede069a7aea6032e63f2a83889c89c02ef5bf7118354",
+    "src/branchlab/benchmark.py": "7073157830eec3f09a0c3bd367a70733aff0c74507503d8ba0b034f6ea1745f9",
+    "src/branchlab/__init__.py": "85bc002c57f0d5c4ccf3ddb30dc13742818c2c24fd71de0398f8514769b6b897",
+    "src/branchlab/experiments_v2.py": "a9dc951d79f905be11e50cc8eeaa610f1bd04e642be547c8a31e4fb8607a63a8",
+    "src/branchlab/model.py": "0ab8c76823914aada6e952b07d761192253cd8c37fb6572df2c5fd085d686f46",
+    "src/branchlab/tokenizer.py": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+    "src/branchlab/experiments.py": "7cf2a2e840f288c87f1b940831359e92144c69c7021ddfd80c0a8bd89409bc0e",
+    "src/branchlab/cli.py": "7ef7f42dff6390b8e79b6d9718ac54058c227a2ee0a0b63323a2c7f4575a37ad",
+    "src/branchlab/lookahead.py": "1bfa4b999283325cd97846ec9cdbc3ae43e3a0dde3a6863468df524bb7811d92",
+    "src/branchlab/optim.py": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+    "src/branchlab/training.py": "381c63bc8b06a48c47ca8bf732ecacea32c5f6d3f0fc88dbe06a5f548a216599",
+    "src/branchlab/data.py": "d38587893c1f89324c0e88182e4134c2bcabb4a52c8e949aec129de0e27635c7",
+    "src/branchlab/reporting.py": "09f6795f6b2233fcdd6097038c9843be6c51fe5204aa66271d98a7e11720bdff",
+    "src/branchlab/synthesis.py": "69434a8d202e889f49f4d3a25cba8c22a73cfd131002baf4bba90e47d3676056"
+  },
+  "original_replay_source_hashes_match": {
+    "src/branchlab/model.py": "0ab8c76823914aada6e952b07d761192253cd8c37fb6572df2c5fd085d686f46",
+    "src/branchlab/optim.py": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+    "src/branchlab/tokenizer.py": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+    "src/branchlab/training.py": "381c63bc8b06a48c47ca8bf732ecacea32c5f6d3f0fc88dbe06a5f548a216599",
+    "src/branchlab/lookahead.py": "1bfa4b999283325cd97846ec9cdbc3ae43e3a0dde3a6863468df524bb7811d92",
+    "src/branchlab/experiments_v2.py": "a9dc951d79f905be11e50cc8eeaa610f1bd04e642be547c8a31e4fb8607a63a8"
+  },
+  "runtime": {
+    "device": "cpu",
+    "torch_version": "2.8.0",
+    "threads": 4
+  }
+}

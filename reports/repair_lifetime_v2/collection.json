@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "confirmatory": false,
+  "source_episode_count": 56,
+  "completed_episodes": 56,
+  "gradient_batch_attempts": 10640,
+  "gradient_batches": 10640,
+  "shared_gradient_batches": 56,
+  "candidate_optimizer_attempts": 168,
+  "candidate_optimizer_steps": 168,
+  "ordinary_optimizer_attempts": 10584,
+  "ordinary_optimizer_steps": 10584,
+  "development_eval_forward_attempts": 32256,
+  "development_eval_forward_batches": 32256,
+  "probe_forward_batches": 0,
+  "baseline_retraining_updates": 0,
+  "scope": "Separate lifetime-audit computation, never added to the original development collection. Candidate optimizer arithmetic shares one gradient. Three units per attempted gradient batch remain an approximate proxy, including failed attempts.",
+  "elapsed_seconds": 409.22014029200363,
+  "trained_tokens": 2723840,
+  "attempted_training_tokens": 2723840,
+  "approx_forward_batch_units": 64176,
+  "expected_counts": {
+    "gradient_batches": 10640,
+    "candidate_optimizer_steps": 168,
+    "ordinary_optimizer_steps": 10584,
+    "development_eval_forward_batches": 32256
+  }
+}

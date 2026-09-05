@@ -1,0 +1,85 @@
+{
+  "model": {
+    "d_model": 160,
+    "n_layers": 3,
+    "n_heads": 8,
+    "max_seq_len": 128
+  },
+  "seeds": {
+    "discovery": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "development": [
+      12,
+      13,
+      14
+    ]
+  },
+  "baseline_steps": 160,
+  "checkpoint_steps": [
+    40,
+    80,
+    120,
+    160
+  ],
+  "batch_size": 4,
+  "seq_len": 64,
+  "lr": 0.001,
+  "conditions": [
+    "native_80",
+    "native_160",
+    "stale_40",
+    "stale_80",
+    "matched_stale_80",
+    "blend_80",
+    "lr_half",
+    "lr_double"
+  ],
+  "probe_offsets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "eval_split": "dev",
+  "eval_offset_tokens": 8192,
+  "eval_batches": 16,
+  "audit_budget_forward_batches": 224,
+  "reserved_final_eval_cost": 32,
+  "search_budget_cells": 180,
+  "search_seeds": [
+    0,
+    1,
+    2
+  ],
+  "scope": "DEVELOPMENT ONLY. Shared current-gradient candidate updates; cheap next-batch forward diagnostics; natural and declared historical optimizer states. No test-text evaluation or confirmation.",
+  "vocab_size": 512,
+  "source_data": "artifacts/development_v2",
+  "source_episode_sha256": "d238ac31fa505918083f33b3ddf87c63ca64d29064daac31da30544ebb72c9a6",
+  "source_curves_sha256": "0f0dc314b87e039883119dcd1ddc22e957b399b236b65ecc92c6ce9ec6cd802c",
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    15,
+    16,
+    31,
+    32,
+    63,
+    64
+  ],
+  "actions": [
+    "keep",
+    "lr_half",
+    "momentum_zero"
+  ],
+  "parity_tolerance": 1e-06,
+  "confirmatory": false,
+  "audit_scope": "Replay existing histories; dev text only; no baseline retraining or probe rerun"
+}
