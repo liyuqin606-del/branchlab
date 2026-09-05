@@ -16,6 +16,13 @@
       "confirmatory": false,
       "evidence": "reports/development_v2/summary.json",
       "finding": "All search strategies retained the no-probe policy; no cost-adjusted advantage over logs-only. 56 states, 7 new development seeds, 4096 dev tokens per final evaluation."
+    },
+    {
+      "id": "v0.2-repair-lifetime-audit",
+      "status": "DEVELOPMENT_MECHANISM_AUDIT_PLANNED",
+      "question": "Does the one-step diagnostic measure a repair effect that vanishes or reverses by64 continuation updates?",
+      "protocol": "protocols/repair_lifetime_v2.md",
+      "confirmatory": false
     }
   ]
 }
