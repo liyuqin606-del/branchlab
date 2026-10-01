@@ -1,0 +1,28 @@
+{
+  "grid": [
+    {
+      "batch_size": 1,
+      "prompt_tokens": 64,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 1,
+      "prompt_tokens": 256,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 4,
+      "prompt_tokens": 64,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 4,
+      "prompt_tokens": 256,
+      "decode_tokens": 64
+    }
+  ],
+  "repeats": 7,
+  "model_sha256": "e94dca1d2d04409211dfb3f248059e070fc55ac20a2d08e6bd9db1a7724d0f8f",
+  "scope": "Inference extension after weak short-context cache speedups; training protocol unchanged",
+  "script_sha256": "b02d5520e5059abbc47d442cc9f1a0a0750d94665b1c3d7bb0cc7beb0fb4ce3e"
+}

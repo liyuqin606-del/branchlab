@@ -1,0 +1,11 @@
+{
+  "status": "verified_stored_records",
+  "frozen_source_matches_current_checkout": true,
+  "runs": 7,
+  "benchmarks": 12,
+  "inference_parameters": 130048512,
+  "training_tokens": 117964800,
+  "graph_benchmarks": 4,
+  "evaluation_replays": 7,
+  "scope": "Hashes, budgets, finite weights, parameter counts and independently recomputed timing statistics; no training rerun"
+}

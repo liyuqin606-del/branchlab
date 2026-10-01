@@ -1,0 +1,7 @@
+# Exact direct versions observed on the Colab NVIDIA L4 runtime.
+# Install a matching CUDA PyTorch wheel; +cu128 is recorded in the report.
+torch==2.11.0
+numpy==2.1.3
+pyarrow==23.0.1
+pytest==8.4.2
+matplotlib==3.10.0

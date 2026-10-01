@@ -1,0 +1,231 @@
+{
+  "purpose": "Engineering quality/cache tradeoff; no novel method or statistical superiority claim",
+  "training_units": "Three paired training seeds; shared text/tokenizer and equal tokens per run",
+  "comparison": "MHA 8 KV heads vs GQA 2 KV heads; same width/depth, different parameter count and FLOPs",
+  "primary_quality_metric": "Final test-token mean cross-entropy over 65,536 nonrepeated target tokens",
+  "test_selection": "No early stopping; final declared update only; no tuning on test scores",
+  "showcase": "GQA chosen before outcomes, independent seed42, 2400 updates; not a fair-budget comparison",
+  "benchmark": "Same saved weights and forced tokens across uncached/dynamic/static; BF16 CUDA; 7 repeats",
+  "benchmark_grid": [
+    {
+      "batch_size": 1,
+      "prompt_tokens": 64,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 1,
+      "prompt_tokens": 256,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 4,
+      "prompt_tokens": 64,
+      "decode_tokens": 64
+    },
+    {
+      "batch_size": 4,
+      "prompt_tokens": 256,
+      "decode_tokens": 64
+    }
+  ],
+  "limits": "One GPU, one training subset, three seeds, no near-duplicate audit, no significance claim",
+  "wall_limit_seconds": 7200,
+  "runs": {
+    "mha-s101": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 8,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 101,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "gqa-s101": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 101,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "mha-s202": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 8,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 202,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "gqa-s202": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 202,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "mha-s303": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 8,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 303,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "gqa-s303": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 303,
+      "updates": 800,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 50,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 100,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    },
+    "showcase-gqa": {
+      "model": {
+        "d_model": 512,
+        "n_layers": 6,
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "max_seq_len": 512,
+        "attention_backend": "sdpa"
+      },
+      "seed": 42,
+      "updates": 2400,
+      "micro_batch": 16,
+      "accumulation": 4,
+      "seq_len": 256,
+      "lr": 0.001,
+      "min_lr_ratio": 0.1,
+      "warmup_updates": 100,
+      "weight_decay": 0.1,
+      "precision": "bf16",
+      "optimizer": "torch",
+      "eval_interval": 200,
+      "checkpoint_interval": 100,
+      "eval_tokens": 65536,
+      "max_grad_norm": 1.0
+    }
+  },
+  "data_manifest_sha256": "0532e27c667c0e150b160e660b6e406f3afbbe33f74fc0930ac6c73d8b75acc2",
+  "source_hashes": {
+    "src/branchlab/__init__.py": "85bc002c57f0d5c4ccf3ddb30dc13742818c2c24fd71de0398f8514769b6b897",
+    "src/branchlab/benchmark.py": "7073157830eec3f09a0c3bd367a70733aff0c74507503d8ba0b034f6ea1745f9",
+    "src/branchlab/cli.py": "9c6e0b55e0f0f4722d5f9cbed7dd258e9afe7db39bb7c38feee0d142ba7a27bb",
+    "src/branchlab/data.py": "d38587893c1f89324c0e88182e4134c2bcabb4a52c8e949aec129de0e27635c7",
+    "src/branchlab/experiments.py": "7cf2a2e840f288c87f1b940831359e92144c69c7021ddfd80c0a8bd89409bc0e",
+    "src/branchlab/experiments_v2.py": "a9dc951d79f905be11e50cc8eeaa610f1bd04e642be547c8a31e4fb8607a63a8",
+    "src/branchlab/fit.py": "2865bf45d02db92bdcc89e86c61cfc555ce7ea0254008a6674927c0cfe2e2647",
+    "src/branchlab/lookahead.py": "1bfa4b999283325cd97846ec9cdbc3ae43e3a0dde3a6863468df524bb7811d92",
+    "src/branchlab/model.py": "f149d28006518b9bb680ab64e5570393173dac69f83b2957e27ef162762dcfc3",
+    "src/branchlab/optim.py": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+    "src/branchlab/portfolio_data.py": "ec6889c36aef7b647fee98898413f62ec0ddf4190984f17aa75d8263bd8b1a5d",
+    "src/branchlab/reporting.py": "09f6795f6b2233fcdd6097038c9843be6c51fe5204aa66271d98a7e11720bdff",
+    "src/branchlab/synthesis.py": "69434a8d202e889f49f4d3a25cba8c22a73cfd131002baf4bba90e47d3676056",
+    "src/branchlab/systems.py": "bf11d7da1ae6515e51244e1e4455c2170e6fe15bb3e3e3bbd47b458483b9110d",
+    "src/branchlab/tokenizer.py": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+    "src/branchlab/training.py": "c9bbfe6df2dc641a9ec00783edad3b6ae9254f1242175206a91426d967356fe1",
+    "src/branchlab/value_aware.py": "5b7090e4af7d925f5139ede069a7aea6032e63f2a83889c89c02ef5bf7118354"
+  },
+  "runner_sha256": "e1f90798d8113371c5ecf830ba4a9c939e94e8cf49e84b6f0a8c43a0aabdbd4b"
+}

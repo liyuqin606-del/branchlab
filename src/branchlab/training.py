@@ -50,6 +50,8 @@ class TokenStream:
         if any(not isinstance(value, int) or isinstance(value, bool) or value <= 0
                for value in (batch_size, seq_len)):
             raise ValueError("batch_size and seq_len must be positive integers")
+        if isinstance(tokens, np.ndarray) and not tokens.flags.writeable:
+            tokens = tokens.copy()
         self.tokens = torch.as_tensor(tokens, dtype=torch.long, device="cpu").clone()
         if self.tokens.ndim != 1:
             raise ValueError("Token stream must be one-dimensional")
@@ -160,7 +162,7 @@ def restore_state(state, model, optimizer, stream, scheduler=None):
     """
     if state.get("format_version") != 1:
         raise ValueError("Unsupported checkpoint format_version")
-    if state["model_config"] != asdict(model.config):
+    if asdict(ModelConfig(**state["model_config"])) != asdict(model.config):
         raise ValueError("Checkpoint model configuration does not match the target model")
     stream.validate_state_dict(state["stream"])
     if scheduler is not None and state["scheduler"] is None:

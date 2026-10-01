@@ -1,0 +1,113 @@
+{
+  "status": "completed",
+  "config": {
+    "model": {
+      "d_model": 512,
+      "n_layers": 6,
+      "n_heads": 8,
+      "n_kv_heads": 2,
+      "max_seq_len": 512,
+      "attention_backend": "sdpa"
+    },
+    "seed": 303,
+    "updates": 800,
+    "micro_batch": 16,
+    "accumulation": 4,
+    "seq_len": 256,
+    "lr": 0.001,
+    "min_lr_ratio": 0.1,
+    "warmup_updates": 50,
+    "weight_decay": 0.1,
+    "precision": "bf16",
+    "optimizer": "torch",
+    "eval_interval": 100,
+    "checkpoint_interval": 100,
+    "eval_tokens": 65536,
+    "max_grad_norm": 1.0
+  },
+  "model_config": {
+    "vocab_size": 2048,
+    "d_model": 512,
+    "n_layers": 6,
+    "n_heads": 8,
+    "max_seq_len": 512,
+    "ffn_mult": 2.6666666666666665,
+    "tie_embeddings": true,
+    "n_kv_heads": 2,
+    "attention_backend": "sdpa"
+  },
+  "parameters": 17567232,
+  "trained_tokens": 13107200,
+  "initial_dev": {
+    "cross_entropy": 7.849364668130875,
+    "perplexity": 2564.104741770906,
+    "target_tokens": 65536,
+    "context_length": 256
+  },
+  "final_dev": {
+    "cross_entropy": 1.6531084924936295,
+    "perplexity": 5.223190867782564,
+    "target_tokens": 65536,
+    "context_length": 256
+  },
+  "test": {
+    "cross_entropy": 1.6572817489504814,
+    "perplexity": 5.245034129862192,
+    "target_tokens": 65536,
+    "context_length": 256
+  },
+  "training_seconds": 102.3785011450118,
+  "training_tokens_per_second": 128026.87921201925,
+  "segments": [
+    {
+      "from_update": 0,
+      "to_update": 800,
+      "wall_seconds": 110.99348110900019
+    }
+  ],
+  "provenance": {
+    "manifest.json": "0532e27c667c0e150b160e660b6e406f3afbbe33f74fc0930ac6c73d8b75acc2",
+    "tokenizer.json": "e6dcfe783743c68abee2376c0a6bf786e4dd56c8b7f36b9ef7a7da6f14ee7552",
+    "train_tokens.npy": "001fc87e23888393a6af29bc76321e16a2ee01f4f15348be859de53550460a18",
+    "dev_tokens.npy": "1639ed95f670453a1a34d0bc04def94f06f45c88346f1a11255be4ad47d0148c",
+    "test_tokens.npy": "fe2001bc23f243afa4f44e6a034a76cb83e9d412347e621e6b81d17baf81b9c0"
+  },
+  "source_hashes": {
+    "__init__.py": "85bc002c57f0d5c4ccf3ddb30dc13742818c2c24fd71de0398f8514769b6b897",
+    "benchmark.py": "7073157830eec3f09a0c3bd367a70733aff0c74507503d8ba0b034f6ea1745f9",
+    "cli.py": "9c6e0b55e0f0f4722d5f9cbed7dd258e9afe7db39bb7c38feee0d142ba7a27bb",
+    "data.py": "d38587893c1f89324c0e88182e4134c2bcabb4a52c8e949aec129de0e27635c7",
+    "experiments.py": "7cf2a2e840f288c87f1b940831359e92144c69c7021ddfd80c0a8bd89409bc0e",
+    "experiments_v2.py": "a9dc951d79f905be11e50cc8eeaa610f1bd04e642be547c8a31e4fb8607a63a8",
+    "fit.py": "2865bf45d02db92bdcc89e86c61cfc555ce7ea0254008a6674927c0cfe2e2647",
+    "lookahead.py": "1bfa4b999283325cd97846ec9cdbc3ae43e3a0dde3a6863468df524bb7811d92",
+    "model.py": "f149d28006518b9bb680ab64e5570393173dac69f83b2957e27ef162762dcfc3",
+    "optim.py": "e3473899bb3a8d55670028dc1447ef82a03549c07a684256f1a073215397a62e",
+    "portfolio_data.py": "ec6889c36aef7b647fee98898413f62ec0ddf4190984f17aa75d8263bd8b1a5d",
+    "reporting.py": "09f6795f6b2233fcdd6097038c9843be6c51fe5204aa66271d98a7e11720bdff",
+    "synthesis.py": "69434a8d202e889f49f4d3a25cba8c22a73cfd131002baf4bba90e47d3676056",
+    "systems.py": "bf11d7da1ae6515e51244e1e4455c2170e6fe15bb3e3e3bbd47b458483b9110d",
+    "tokenizer.py": "3ae2e28d7558c36b8e5b261a094a621c0a067447d3a0df0ce9e2e59adeb98655",
+    "training.py": "c9bbfe6df2dc641a9ec00783edad3b6ae9254f1242175206a91426d967356fe1",
+    "value_aware.py": "5b7090e4af7d925f5139ede069a7aea6032e63f2a83889c89c02ef5bf7118354"
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu128",
+    "python": "3.13.15",
+    "cuda": "12.8",
+    "cpu_threads": 4,
+    "optimizer": "torch",
+    "fused_optimizer": true,
+    "precision": "bf16",
+    "tf32": false
+  },
+  "scope": "Fixed-token-budget subset engineering comparison; not SOTA or a full-data benchmark",
+  "artifacts": {
+    "model.pt": "63e465a3e06da828d29e18565c28da6a05b92ab456d5a40e204021101582ea54",
+    "tokenizer.json": "e6dcfe783743c68abee2376c0a6bf786e4dd56c8b7f36b9ef7a7da6f14ee7552",
+    "checkpoint.pt": "bbfefeee234b3ae8111d0def1ad47af77630d7c7023880fced2ad5d088c96b90",
+    "history.json": "12ff324893d145f40fb444a65125fbf23c3eae8e1de9f5b4e463b42d9d0cf19f"
+  }
+}

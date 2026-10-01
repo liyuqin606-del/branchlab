@@ -6,3 +6,6 @@ recursive-include scripts *.py
 recursive-include docs *.md
 recursive-include reports *.md *.json *.png
 recursive-include ideas *.md
+include requirements-colab.txt
+recursive-include notebooks *.ipynb
+recursive-include reports *.svg *.pdf

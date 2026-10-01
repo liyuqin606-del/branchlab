@@ -1,0 +1,148 @@
+{
+  "paths": {
+    "uncached": {
+      "prefill_seconds_samples": [
+        0.007543964999968011,
+        0.007434552000177064,
+        0.0074671249999482825,
+        0.007567842999833374,
+        0.007514445000197156,
+        0.007621250000283908,
+        0.00742619199991168
+      ],
+      "decode_seconds_samples": [
+        0.47475081600032354,
+        0.4726563509998414,
+        0.4817325159997381,
+        0.4746776789997966,
+        0.4752262269998937,
+        0.48206782900024336,
+        0.4719036349997623
+      ],
+      "peak_allocated_bytes_samples": [
+        58414592,
+        57431552,
+        57431552,
+        57431552,
+        57431552,
+        57431552,
+        57431552
+      ],
+      "cache_allocated_bytes": 0,
+      "prefill_median_seconds": 0.007514445000197156,
+      "decode_median_seconds": 0.47475081600032354,
+      "decode_tokens_per_second": 134.80756186832207,
+      "decode_ms_per_batch_step": 7.417981500005055,
+      "prefill_plus_decode_seconds": 0.47475081600032354,
+      "peak_allocated_bytes": 58414592,
+      "speedup_vs_uncached": 1.0
+    },
+    "dynamic": {
+      "prefill_seconds_samples": [
+        0.007374130000243895,
+        0.007643140999789466,
+        0.008816264999950363,
+        0.00836282599993865,
+        0.0074498919998404745,
+        0.007355576999998448,
+        0.007389733999843884
+      ],
+      "decode_seconds_samples": [
+        0.45223033899992515,
+        0.4563639120001426,
+        0.4571527450002577,
+        0.46644931299988457,
+        0.45340346800003317,
+        0.45314617100029864,
+        0.4573240509998868
+      ],
+      "peak_allocated_bytes_samples": [
+        57580544,
+        57580544,
+        57580544,
+        57580544,
+        57580544,
+        57580544,
+        57580544
+      ],
+      "cache_allocated_bytes": 983040,
+      "parity": {
+        "logits_max_abs_difference": 0.09375,
+        "mean_distribution_kl": 4.413022179505788e-05,
+        "argmax_disagreement_fraction": 0.0,
+        "kl_tolerance": 0.002
+      },
+      "prefill_median_seconds": 0.0074498919998404745,
+      "decode_median_seconds": 0.4563639120001426,
+      "decode_tokens_per_second": 140.23895912256094,
+      "decode_ms_per_batch_step": 7.130686125002228,
+      "prefill_plus_decode_seconds": 0.46381380399998307,
+      "peak_allocated_bytes": 57580544,
+      "speedup_vs_uncached": 1.0402900043511223
+    },
+    "static": {
+      "prefill_seconds_samples": [
+        0.008025855000141746,
+        0.007951964999847405,
+        0.007917093000287423,
+        0.007909727000424027,
+        0.008003848000043945,
+        0.007906279000053473,
+        0.0078386249997493
+      ],
+      "decode_seconds_samples": [
+        0.46043040900030974,
+        0.45972280600017257,
+        0.4588624970001547,
+        0.45804413000041677,
+        0.4629823850000321,
+        0.4638226150000264,
+        0.4520239080002284
+      ],
+      "peak_allocated_bytes_samples": [
+        53844992,
+        53844992,
+        53844992,
+        53844992,
+        53844992,
+        53844992,
+        53844992
+      ],
+      "cache_allocated_bytes": 983040,
+      "parity": {
+        "logits_max_abs_difference": 0.09375,
+        "mean_distribution_kl": 4.413022179505788e-05,
+        "argmax_disagreement_fraction": 0.0,
+        "kl_tolerance": 0.002
+      },
+      "prefill_median_seconds": 0.007917093000287423,
+      "decode_median_seconds": 0.45972280600017257,
+      "decode_tokens_per_second": 139.2143247293587,
+      "decode_ms_per_batch_step": 7.183168843752696,
+      "prefill_plus_decode_seconds": 0.46763989900046,
+      "peak_allocated_bytes": 53844992,
+      "speedup_vs_uncached": 1.0326892853780791
+    }
+  },
+  "metadata": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu128",
+    "dtype": "torch.bfloat16",
+    "batch_size": 1,
+    "prompt_tokens": 256,
+    "decode_tokens": 64,
+    "repeats": 7,
+    "attention_backend": "sdpa",
+    "query_heads": 8,
+    "kv_heads": 2,
+    "parameters": 17567232,
+    "prompt_sha256": "be364d814eb2c3127c1e151b496a571e008cbbdf04765dc65dafe7069c125bef",
+    "continuation": "Fixed arithmetic tokens; same continuation for all paths",
+    "timing_scope": "Prefill includes cache allocation; decode excludes prefill; synchronized wall time",
+    "memory_scope": "Absolute CUDA live allocation, includes model/inputs and live cache; CPU/MPS unavailable",
+    "cache_memory_scope": "Actual persistent K/V tensor storage, including unused static capacity",
+    "warmup": "One complete correctness run per path; rotating timing order",
+    "model_sha256": "78f367ce18f51f38156d674a26bab5913275303a9bb1eca4adcd027df51d05d8"
+  }
+}

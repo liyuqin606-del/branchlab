@@ -1,0 +1,25 @@
+{
+  "model": {
+    "d_model": 512,
+    "n_layers": 6,
+    "n_heads": 8,
+    "n_kv_heads": 2,
+    "max_seq_len": 512,
+    "attention_backend": "sdpa"
+  },
+  "seed": 42,
+  "updates": 2400,
+  "micro_batch": 16,
+  "accumulation": 4,
+  "seq_len": 256,
+  "lr": 0.001,
+  "min_lr_ratio": 0.1,
+  "warmup_updates": 100,
+  "weight_decay": 0.1,
+  "precision": "bf16",
+  "optimizer": "torch",
+  "eval_interval": 200,
+  "checkpoint_interval": 100,
+  "eval_tokens": 65536,
+  "max_grad_norm": 1.0
+}

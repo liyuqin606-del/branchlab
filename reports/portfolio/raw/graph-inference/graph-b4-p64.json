@@ -1,0 +1,66 @@
+{
+  "decode_seconds_samples": {
+    "dynamic": [
+      0.46155529499992554,
+      0.45201598499988904,
+      0.45560434100025304,
+      0.4554998510002406,
+      0.4628349939994223,
+      0.47959610399993835,
+      0.4611655950002387
+    ],
+    "cuda_graph": [
+      0.0407586250003078,
+      0.04075169199950324,
+      0.040758357000413525,
+      0.040750633999778074,
+      0.04078133400071238,
+      0.040758819000075164,
+      0.04076170000007551
+    ]
+  },
+  "prefill_seconds_samples": {
+    "dynamic": [
+      0.007328585999857751,
+      0.00761714899999788,
+      0.007154644000365806,
+      0.0076350220006133895,
+      0.0071567519999007345,
+      0.008097246999568597,
+      0.009859544999926584
+    ],
+    "cuda_graph": [
+      0.007452711000041745,
+      0.007858216999920842,
+      0.007620151000082842,
+      0.00819059399964317,
+      0.007757077999485773,
+      0.008493089000694454,
+      0.007596866999847407
+    ]
+  },
+  "decode_tokens_per_second": {
+    "dynamic": 555.1151316911825,
+    "cuda_graph": 6280.879200367204
+  },
+  "speedup_vs_dynamic": 11.314552318601425,
+  "capture_and_warmup_seconds": 0.033748935000403435,
+  "parity": {
+    "logits_max_abs_difference": 0.125,
+    "mean_distribution_kl": 0.00012829131446778774,
+    "argmax_disagreement_fraction": 0.015625,
+    "kl_tolerance": 0.002
+  },
+  "metadata": {
+    "batch_size": 4,
+    "prompt_tokens": 64,
+    "decode_tokens": 64,
+    "repeats": 7,
+    "gpu": "NVIDIA L4",
+    "torch": "2.11.0+cu128",
+    "dtype": "torch.bfloat16",
+    "scope": "Warm reusable graph; capture cost excluded from decode and separately reported; same forced tokens; alternating order",
+    "script_sha256": "b02d5520e5059abbc47d442cc9f1a0a0750d94665b1c3d7bb0cc7beb0fb4ce3e",
+    "model_sha256": "e94dca1d2d04409211dfb3f248059e070fc55ac20a2d08e6bd9db1a7724d0f8f"
+  }
+}
