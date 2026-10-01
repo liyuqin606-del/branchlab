@@ -1,0 +1,876 @@
+{
+  "scope": "Descriptive constant-action controls for the development lifetime audit.\n\nAdded after the v2 NOGO, before inspecting the lifetime replay. No independent\nconfirmation or automated promotion. Retain all fixed controls; learned constant\nchoices use discovery seeds only. No text or model execution is performed.\n",
+  "confirmatory": false,
+  "configurations": [
+    {
+      "horizon": 4,
+      "controls": [
+        {
+          "name": "constant_keep_h4",
+          "action": "keep",
+          "updates": 4,
+          "probe_cost": 0,
+          "mean_development_loss": 3.511769725009799,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5034120697528124
+            },
+            {
+              "seed": 13,
+              "loss": 3.537655996158719
+            },
+            {
+              "seed": 14,
+              "loss": 3.4942411091178656
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h4",
+          "action": "lr_half",
+          "updates": 4,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5101453196257353,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5072524324059486
+            },
+            {
+              "seed": 13,
+              "loss": 3.5296224523335695
+            },
+            {
+              "seed": 14,
+              "loss": 3.4935610741376877
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h4",
+          "action": "momentum_zero",
+          "updates": 4,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5050041073312364,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4921966455876827
+            },
+            {
+              "seed": 13,
+              "loss": 3.5326258316636086
+            },
+            {
+              "seed": 14,
+              "loss": 3.4901898447424173
+            }
+          ]
+        },
+        {
+          "name": "constant_keep_h3",
+          "action": "keep",
+          "updates": 3,
+          "probe_cost": 0,
+          "mean_development_loss": 3.513961298391223,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5085166711360216
+            },
+            {
+              "seed": 13,
+              "loss": 3.5353420712053776
+            },
+            {
+              "seed": 14,
+              "loss": 3.4980251528322697
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h3",
+          "action": "lr_half",
+          "updates": 3,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5127186768998704,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5118107683956623
+            },
+            {
+              "seed": 13,
+              "loss": 3.530421804636717
+            },
+            {
+              "seed": 14,
+              "loss": 3.4959234576672316
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h3",
+          "action": "momentum_zero",
+          "updates": 3,
+          "probe_cost": 0,
+          "mean_development_loss": 3.507131215184927,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.498947387561202
+            },
+            {
+              "seed": 13,
+              "loss": 3.5295558888465166
+            },
+            {
+              "seed": 14,
+              "loss": 3.4928903691470623
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_full",
+          "action": "lr_half",
+          "updates": 4,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5101453196257353,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5072524324059486
+            },
+            {
+              "seed": 13,
+              "loss": 3.5296224523335695
+            },
+            {
+              "seed": 14,
+              "loss": 3.4935610741376877
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_joint",
+          "action": "lr_half",
+          "updates": 4,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5101453196257353,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.5072524324059486
+            },
+            {
+              "seed": 13,
+              "loss": 3.5296224523335695
+            },
+            {
+              "seed": 14,
+              "loss": 3.4935610741376877
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "horizon": 8,
+      "controls": [
+        {
+          "name": "constant_keep_h8",
+          "action": "keep",
+          "updates": 8,
+          "probe_cost": 0,
+          "mean_development_loss": 3.5031364914029837,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.485896749421954
+            },
+            {
+              "seed": 13,
+              "loss": 3.539747592061758
+            },
+            {
+              "seed": 14,
+              "loss": 3.483765132725239
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h8",
+          "action": "lr_half",
+          "updates": 8,
+          "probe_cost": 0,
+          "mean_development_loss": 3.498458025356134,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4898208491504192
+            },
+            {
+              "seed": 13,
+              "loss": 3.524271298199892
+            },
+            {
+              "seed": 14,
+              "loss": 3.48128192871809
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h8",
+          "action": "momentum_zero",
+          "updates": 8,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4989413414150476,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.47996985912323
+            },
+            {
+              "seed": 13,
+              "loss": 3.538125028833747
+            },
+            {
+              "seed": 14,
+              "loss": 3.478729136288166
+            }
+          ]
+        },
+        {
+          "name": "constant_keep_h7",
+          "action": "keep",
+          "updates": 7,
+          "probe_cost": 0,
+          "mean_development_loss": 3.505298236384988,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4898207746446133
+            },
+            {
+              "seed": 13,
+              "loss": 3.5406541638076305
+            },
+            {
+              "seed": 14,
+              "loss": 3.4854197707027197
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h7",
+          "action": "lr_half",
+          "updates": 7,
+          "probe_cost": 0,
+          "mean_development_loss": 3.501260127251347,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4935197588056326
+            },
+            {
+              "seed": 13,
+              "loss": 3.5269490480422974
+            },
+            {
+              "seed": 14,
+              "loss": 3.4833115749061108
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h7",
+          "action": "momentum_zero",
+          "updates": 7,
+          "probe_cost": 0,
+          "mean_development_loss": 3.501821843907237,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.486442534253001
+            },
+            {
+              "seed": 13,
+              "loss": 3.537512384355068
+            },
+            {
+              "seed": 14,
+              "loss": 3.4815106131136417
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_full",
+          "action": "lr_half",
+          "updates": 8,
+          "probe_cost": 0,
+          "mean_development_loss": 3.498458025356134,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4898208491504192
+            },
+            {
+              "seed": 13,
+              "loss": 3.524271298199892
+            },
+            {
+              "seed": 14,
+              "loss": 3.48128192871809
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_joint",
+          "action": "lr_half",
+          "updates": 8,
+          "probe_cost": 0,
+          "mean_development_loss": 3.498458025356134,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4898208491504192
+            },
+            {
+              "seed": 13,
+              "loss": 3.524271298199892
+            },
+            {
+              "seed": 14,
+              "loss": 3.48128192871809
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "horizon": 16,
+      "controls": [
+        {
+          "name": "constant_keep_h16",
+          "action": "keep",
+          "updates": 16,
+          "probe_cost": 0,
+          "mean_development_loss": 3.489412326986591,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.46974678337574
+            },
+            {
+              "seed": 13,
+              "loss": 3.5238489769399166
+            },
+            {
+              "seed": 14,
+              "loss": 3.4746412206441164
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h16",
+          "action": "lr_half",
+          "updates": 16,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4831113486240306,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4707969650626183
+            },
+            {
+              "seed": 13,
+              "loss": 3.5117412339895964
+            },
+            {
+              "seed": 14,
+              "loss": 3.4667958468198776
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h16",
+          "action": "momentum_zero",
+          "updates": 16,
+          "probe_cost": 0,
+          "mean_development_loss": 3.486022266869744,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4634562581777573
+            },
+            {
+              "seed": 13,
+              "loss": 3.5225555934011936
+            },
+            {
+              "seed": 14,
+              "loss": 3.47205494903028
+            }
+          ]
+        },
+        {
+          "name": "constant_keep_h15",
+          "action": "keep",
+          "updates": 15,
+          "probe_cost": 0,
+          "mean_development_loss": 3.493948170915246,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.475589841604233
+            },
+            {
+              "seed": 13,
+              "loss": 3.526471709832549
+            },
+            {
+              "seed": 14,
+              "loss": 3.479782961308956
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h15",
+          "action": "lr_half",
+          "updates": 15,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4847481455653906,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4744604900479317
+            },
+            {
+              "seed": 13,
+              "loss": 3.511321432888508
+            },
+            {
+              "seed": 14,
+              "loss": 3.4684625137597322
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h15",
+          "action": "momentum_zero",
+          "updates": 15,
+          "probe_cost": 0,
+          "mean_development_loss": 3.491219338029623,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4698624685406685
+            },
+            {
+              "seed": 13,
+              "loss": 3.525561112910509
+            },
+            {
+              "seed": 14,
+              "loss": 3.4782344326376915
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_full",
+          "action": "lr_half",
+          "updates": 16,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4831113486240306,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4707969650626183
+            },
+            {
+              "seed": 13,
+              "loss": 3.5117412339895964
+            },
+            {
+              "seed": 14,
+              "loss": 3.4667958468198776
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_joint",
+          "action": "lr_half",
+          "updates": 16,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4831113486240306,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4707969650626183
+            },
+            {
+              "seed": 13,
+              "loss": 3.5117412339895964
+            },
+            {
+              "seed": 14,
+              "loss": 3.4667958468198776
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "horizon": 32,
+      "controls": [
+        {
+          "name": "constant_keep_h32",
+          "action": "keep",
+          "updates": 32,
+          "probe_cost": 0,
+          "mean_development_loss": 3.47756937208275,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4538073111325502
+            },
+            {
+              "seed": 13,
+              "loss": 3.5069520454853773
+            },
+            {
+              "seed": 14,
+              "loss": 3.4719487596303225
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h32",
+          "action": "lr_half",
+          "updates": 32,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4654135517776012,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.451325273141265
+            },
+            {
+              "seed": 13,
+              "loss": 3.4845208283513784
+            },
+            {
+              "seed": 14,
+              "loss": 3.4603945538401604
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h32",
+          "action": "momentum_zero",
+          "updates": 32,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4787744178126254,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4551458805799484
+            },
+            {
+              "seed": 13,
+              "loss": 3.5035245213657618
+            },
+            {
+              "seed": 14,
+              "loss": 3.4776528514921665
+            }
+          ]
+        },
+        {
+          "name": "constant_keep_h31",
+          "action": "keep",
+          "updates": 31,
+          "probe_cost": 0,
+          "mean_development_loss": 3.480991194024682,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.459122497588396
+            },
+            {
+              "seed": 13,
+              "loss": 3.5106123611330986
+            },
+            {
+              "seed": 14,
+              "loss": 3.4732387233525515
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h31",
+          "action": "lr_half",
+          "updates": 31,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4679857964317002,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.452177107334137
+            },
+            {
+              "seed": 13,
+              "loss": 3.4848303887993097
+            },
+            {
+              "seed": 14,
+              "loss": 3.4669498931616545
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h31",
+          "action": "momentum_zero",
+          "updates": 31,
+          "probe_cost": 0,
+          "mean_development_loss": 3.481462416549524,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4611921235919
+            },
+            {
+              "seed": 13,
+              "loss": 3.5067512281239033
+            },
+            {
+              "seed": 14,
+              "loss": 3.476443897932768
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_full",
+          "action": "lr_half",
+          "updates": 32,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4654135517776012,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.451325273141265
+            },
+            {
+              "seed": 13,
+              "loss": 3.4845208283513784
+            },
+            {
+              "seed": 14,
+              "loss": 3.4603945538401604
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_joint",
+          "action": "lr_half",
+          "updates": 32,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4654135517776012,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.451325273141265
+            },
+            {
+              "seed": 13,
+              "loss": 3.4845208283513784
+            },
+            {
+              "seed": 14,
+              "loss": 3.4603945538401604
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "horizon": 64,
+      "controls": [
+        {
+          "name": "constant_keep_h64",
+          "action": "keep",
+          "updates": 64,
+          "probe_cost": 0,
+          "mean_development_loss": 3.419306665658951,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.3950618002563715
+            },
+            {
+              "seed": 13,
+              "loss": 3.455052360892296
+            },
+            {
+              "seed": 14,
+              "loss": 3.407805835828185
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h64",
+          "action": "lr_half",
+          "updates": 64,
+          "probe_cost": 0,
+          "mean_development_loss": 3.419730500628551,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4052423369139433
+            },
+            {
+              "seed": 13,
+              "loss": 3.4423336684703827
+            },
+            {
+              "seed": 14,
+              "loss": 3.4116154965013266
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h64",
+          "action": "momentum_zero",
+          "updates": 64,
+          "probe_cost": 0,
+          "mean_development_loss": 3.4237161837518215,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.39839025773108
+            },
+            {
+              "seed": 13,
+              "loss": 3.465611893683672
+            },
+            {
+              "seed": 14,
+              "loss": 3.4071463998407125
+            }
+          ]
+        },
+        {
+          "name": "constant_keep_h63",
+          "action": "keep",
+          "updates": 63,
+          "probe_cost": 0,
+          "mean_development_loss": 3.418785865108172,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.392299845814705
+            },
+            {
+              "seed": 13,
+              "loss": 3.454880714416504
+            },
+            {
+              "seed": 14,
+              "loss": 3.4091770350933075
+            }
+          ]
+        },
+        {
+          "name": "constant_lr_half_h63",
+          "action": "lr_half",
+          "updates": 63,
+          "probe_cost": 0,
+          "mean_development_loss": 3.419571841135621,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4059706311672926
+            },
+            {
+              "seed": 13,
+              "loss": 3.439128080382943
+            },
+            {
+              "seed": 14,
+              "loss": 3.4136168118566275
+            }
+          ]
+        },
+        {
+          "name": "constant_momentum_zero_h63",
+          "action": "momentum_zero",
+          "updates": 63,
+          "probe_cost": 0,
+          "mean_development_loss": 3.42387214054664,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4008884076029062
+            },
+            {
+              "seed": 13,
+              "loss": 3.4612052645534277
+            },
+            {
+              "seed": 14,
+              "loss": 3.4095227494835854
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_full",
+          "action": "lr_half",
+          "updates": 64,
+          "probe_cost": 0,
+          "mean_development_loss": 3.419730500628551,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4052423369139433
+            },
+            {
+              "seed": 13,
+              "loss": 3.4423336684703827
+            },
+            {
+              "seed": 14,
+              "loss": 3.4116154965013266
+            }
+          ]
+        },
+        {
+          "name": "discovery_selected_constant_joint",
+          "action": "lr_half",
+          "updates": 64,
+          "probe_cost": 0,
+          "mean_development_loss": 3.419730500628551,
+          "per_seed": [
+            {
+              "seed": 12,
+              "loss": 3.4052423369139433
+            },
+            {
+              "seed": 13,
+              "loss": 3.4423336684703827
+            },
+            {
+              "seed": 14,
+              "loss": 3.4116154965013266
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "curves": "3814a987665c0b4feaf8f21b7707b1c365a39443ddd48ab9f16081d79718912f",
+    "episodes": "d238ac31fa505918083f33b3ddf87c63ca64d29064daac31da30544ebb72c9a6",
+    "analysis": "c2b1d40ffa431f1d72ffebb8d26840bf37be010bb49df9097b6ad17a379382c7"
+  }
+}

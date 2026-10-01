@@ -1,0 +1,1874 @@
+{
+  "scope": "Development-only diagnostic analysis; no confirmation states/text read; oracle quantities are nondeployable.",
+  "baseline": {
+    "logs_mean_loss": 3.418438587958614,
+    "same_horizon_short_logs_mean_loss": 3.4204486838231483,
+    "logs_action_counts": {
+      "1": 7,
+      "0": 10,
+      "2": 7
+    },
+    "oracle_action_counts_at_64": {
+      "2": 8,
+      "0": 7,
+      "1": 9
+    },
+    "logs_action_mismatches_at_64": 15,
+    "oracle_loss_at_64": 3.4112817545731864,
+    "oracle_loss_at_63_with_paid_probe": 3.4110670456041894,
+    "logs_regret_at_64": 0.007156833385427793,
+    "oracle_skip_or_paid_action_loss": 3.410468344266216,
+    "oracle_free_action_and_horizon_loss": 3.409448429942131,
+    "log_feature_count": 92,
+    "discovery_episodes": 32,
+    "development_episodes": 24,
+    "discovery_seed_count": 4,
+    "development_seed_count": 3
+  },
+  "by_condition": {
+    "blend_80": {
+      "logs_mean_loss": 3.402392382423083,
+      "oracle_64_loss": 3.394187182188034,
+      "logs_regret": 0.00820520023504893,
+      "logs_actions": [
+        1,
+        0,
+        2
+      ],
+      "oracle_actions": [
+        2,
+        1,
+        2
+      ]
+    },
+    "lr_double": {
+      "logs_mean_loss": 3.396263708670934,
+      "oracle_64_loss": 3.3863001465797424,
+      "logs_regret": 0.00996356209119161,
+      "logs_actions": [
+        0,
+        0,
+        2
+      ],
+      "oracle_actions": [
+        0,
+        1,
+        1
+      ]
+    },
+    "lr_half": {
+      "logs_mean_loss": 3.399106815457344,
+      "oracle_64_loss": 3.3978390246629715,
+      "logs_regret": 0.0012677907943725586,
+      "logs_actions": [
+        0,
+        0,
+        2
+      ],
+      "oracle_actions": [
+        0,
+        0,
+        0
+      ]
+    },
+    "matched_stale_80": {
+      "logs_mean_loss": 3.398945818344752,
+      "oracle_64_loss": 3.395329862833023,
+      "logs_regret": 0.0036159555117289224,
+      "logs_actions": [
+        1,
+        1,
+        2
+      ],
+      "oracle_actions": [
+        2,
+        1,
+        2
+      ]
+    },
+    "native_160": {
+      "logs_mean_loss": 3.399442275365194,
+      "oracle_64_loss": 3.388537069161733,
+      "logs_regret": 0.010905206203460693,
+      "logs_actions": [
+        0,
+        0,
+        2
+      ],
+      "oracle_actions": [
+        2,
+        1,
+        0
+      ]
+    },
+    "native_80": {
+      "logs_mean_loss": 3.5528310239315033,
+      "oracle_64_loss": 3.5382603257894516,
+      "logs_regret": 0.014570698142051697,
+      "logs_actions": [
+        1,
+        0,
+        1
+      ],
+      "oracle_actions": [
+        0,
+        1,
+        1
+      ]
+    },
+    "stale_40": {
+      "logs_mean_loss": 3.3996700843175254,
+      "oracle_64_loss": 3.39439628024896,
+      "logs_regret": 0.005273804068565369,
+      "logs_actions": [
+        0,
+        0,
+        2
+      ],
+      "oracle_actions": [
+        2,
+        1,
+        0
+      ]
+    },
+    "stale_80": {
+      "logs_mean_loss": 3.398856595158577,
+      "oracle_64_loss": 3.3954041451215744,
+      "logs_regret": 0.0034524500370025635,
+      "logs_actions": [
+        1,
+        1,
+        2
+      ],
+      "oracle_actions": [
+        2,
+        1,
+        2
+      ]
+    }
+  },
+  "probes": [
+    {
+      "probe": "lr_half:1:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.0017141657881438732,
+      "oof_discovery_positive_episodes": 19,
+      "always_head_development_loss": 3.4207691134264073,
+      "incremental_head_loss_vs_same_horizon_logs": 0.00032042960325876874,
+      "net_head_loss_vs_full_logs": 0.0023305254677931466,
+      "gate_development_loss": 3.418438587958614,
+      "gate_acquisitions": 0,
+      "actual_positive_gain_episodes": 9,
+      "gate_true_positive": 0,
+      "gate_false_positive": 0,
+      "gate_false_negative": 9,
+      "oracle_gate_with_fitted_head_loss": 3.4166676780829826,
+      "predicted_gain_mean": -0.012553424774252387,
+      "actual_gain_mean": -0.0023305254677931466,
+      "gain_prediction_corr": 0.3768609492923115,
+      "signal_future_action_contrast_corr_discovery": -0.009187667609697253,
+      "signal_future_action_contrast_corr_development": -0.5721234476321236,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.010281038663010089,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004301711916923523,
+          "predicted_net_gain": -0.03147058260777444,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.012804634079061902,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.010862160384952423,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.01857663929275838,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.0006483729462929909,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": -0.01235614317027731,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.011193800804259756,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": 0.018260031938552856,
+          "predicted_net_gain": -0.007512211000733993,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.026663962667491818,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": -0.0044750629843554315,
+          "acquired": false
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.01416568488388235,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004813879728317261,
+          "predicted_net_gain": -0.011387001523844314,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.002355913976036212,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.015153612645723223,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.014378617905471139,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01106476645622826,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.030287416464201584,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": -0.008105442634798215,
+          "acquired": false
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.011548224611957241,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.015085339402838004,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": -0.0022577403419960927,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.006542496443866761,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.012105328690245339,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "lr_half:2:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.0012547816149890423,
+      "oof_discovery_positive_episodes": 18,
+      "always_head_development_loss": 3.4204486838231483,
+      "incremental_head_loss_vs_same_horizon_logs": 0.0,
+      "net_head_loss_vs_full_logs": 0.002010095864534378,
+      "gate_development_loss": 3.418438587958614,
+      "gate_acquisitions": 0,
+      "actual_positive_gain_episodes": 10,
+      "gate_true_positive": 0,
+      "gate_false_positive": 0,
+      "gate_false_negative": 10,
+      "oracle_gate_with_fitted_head_loss": 3.41653423756361,
+      "predicted_gain_mean": -0.012770112163378408,
+      "actual_gain_mean": -0.002010095864534378,
+      "gain_prediction_corr": 0.42571369277813986,
+      "signal_future_action_contrast_corr_discovery": -0.02125508422417802,
+      "signal_future_action_contrast_corr_development": -0.3060790833479173,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.011031179134021792,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004301711916923523,
+          "predicted_net_gain": -0.024816584335294222,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.009618254625604148,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.01224416300148096,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.015809572141819286,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -5.024950229239652e-06,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": -0.011131399502256506,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.012711400082455237,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": 0.018260031938552856,
+          "predicted_net_gain": -0.009196656817249627,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.02283459294065565,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003202572464942932,
+          "predicted_net_gain": -0.007120308802572993,
+          "acquired": false
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.01275635641204893,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004813879728317261,
+          "predicted_net_gain": -0.013461657752678,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.005578098233484814,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.01465419565990279,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.013019770353933197,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01494616961898645,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.025399426129321445,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": -0.010637034949377604,
+          "acquired": false
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01366901520129706,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.016705951094545785,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": -0.004718067018752535,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.010102376905788017,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.014315436257325505,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "lr_half:4:next_batch_loss",
+      "oof_discovery_mean_net_gain": 0.0004746601916849613,
+      "oof_discovery_positive_episodes": 21,
+      "always_head_development_loss": 3.4224518233289323,
+      "incremental_head_loss_vs_same_horizon_logs": 0.0020031395057837167,
+      "net_head_loss_vs_full_logs": 0.004013235370318095,
+      "gate_development_loss": 3.419103047500054,
+      "gate_acquisitions": 7,
+      "actual_positive_gain_episodes": 9,
+      "gate_true_positive": 2,
+      "gate_false_positive": 5,
+      "gate_false_negative": 7,
+      "oracle_gate_with_fitted_head_loss": 3.4173730220645666,
+      "predicted_gain_mean": -0.002971189911812532,
+      "actual_gain_mean": -0.004013235370318095,
+      "gain_prediction_corr": 0.6478541816195036,
+      "signal_future_action_contrast_corr_discovery": 0.1473730346660708,
+      "signal_future_action_contrast_corr_development": -0.12865719137828927,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.0010889352723327719,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.02869299054145813,
+          "predicted_net_gain": -0.017519705457341384,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.0006590088228604564,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.006834617675141647,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.004136482196224234,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.002202885185603579,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0030033141374588013,
+          "predicted_net_gain": -0.007581921771925041,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.007043846756320572,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": 0.002630174160003662,
+          "predicted_net_gain": -0.0026836605477285327,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.020639755513420996,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": -6.31539728634745e-05,
+          "acquired": false
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.004559079324183087,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004813879728317261,
+          "predicted_net_gain": -0.00476473752342974,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": 0.006886678240216252,
+          "acquired": true
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": 0.0033856659899907686,
+          "acquired": true
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.004634556675315208,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.001442550226551796,
+          "acquired": true
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.012425234022687961,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": 0.006997190176005002,
+          "acquired": true
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.0018725294902407499,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.0026506444614230735,
+          "acquired": true
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": 0.0004865147583404533,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.007372872214607987,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.0018205637430166633,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "lr_half:8:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.000432776752859354,
+      "oof_discovery_positive_episodes": 20,
+      "always_head_development_loss": 3.421742127587398,
+      "incremental_head_loss_vs_same_horizon_logs": 0.0012934437642494838,
+      "net_head_loss_vs_full_logs": 0.0033035396287838617,
+      "gate_development_loss": 3.4187589852760234,
+      "gate_acquisitions": 2,
+      "actual_positive_gain_episodes": 8,
+      "gate_true_positive": 0,
+      "gate_false_positive": 2,
+      "gate_false_negative": 8,
+      "oracle_gate_with_fitted_head_loss": 3.417519500479102,
+      "predicted_gain_mean": -0.008355115001040877,
+      "actual_gain_mean": -0.0033035396287838617,
+      "gain_prediction_corr": 0.26248888907852996,
+      "signal_future_action_contrast_corr_discovery": 0.14407260000787733,
+      "signal_future_action_contrast_corr_development": -0.13103575677899726,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.010007294708345178,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004301711916923523,
+          "predicted_net_gain": -0.021319824766618256,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.003962232751856379,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.011025836689408784,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.007734545111781634,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.00025245564262720097,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": -0.009814414995135839,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.01143186997130292,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": 0.002630174160003662,
+          "predicted_net_gain": -0.007428312079993934,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.01822285035321155,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": 0.0028581446038620254,
+          "acquired": true
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.013817355683894436,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.0029086023569107056,
+          "predicted_net_gain": -0.0021370580720494244,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.0008953443497281767,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.009338345577504655,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.01411379270197584,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.007405090772047396,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.01822088762131712,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": 0.0018447892658374626,
+          "acquired": true
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01182058131210346,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.002849262793195419,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": -0.002011900620072467,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.008806235578503395,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.012610201742007086,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "momentum_zero:1:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.002866883762180805,
+      "oof_discovery_positive_episodes": 18,
+      "always_head_development_loss": 3.420425799985727,
+      "incremental_head_loss_vs_same_horizon_logs": -2.2883837421735127e-05,
+      "net_head_loss_vs_full_logs": 0.0019872120271126428,
+      "gate_development_loss": 3.420425799985727,
+      "gate_acquisitions": 24,
+      "actual_positive_gain_episodes": 10,
+      "gate_true_positive": 10,
+      "gate_false_positive": 14,
+      "gate_false_negative": 0,
+      "oracle_gate_with_fitted_head_loss": 3.4165425399939218,
+      "predicted_gain_mean": 0.021163085733349213,
+      "actual_gain_mean": -0.0019872120271126428,
+      "gain_prediction_corr": -0.10670908396471245,
+      "signal_future_action_contrast_corr_discovery": -0.01763941269893306,
+      "signal_future_action_contrast_corr_development": -0.2871853055238381,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": 0.004113418532541236,
+          "acquired": true
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004301711916923523,
+          "predicted_net_gain": 0.00493169190652561,
+          "acquired": true
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": 0.024908706087746518,
+          "acquired": true
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": 0.020286674347362026,
+          "acquired": true
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": 0.01825294890868026,
+          "acquired": true
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": 0.0021995528595165504,
+          "acquired": true
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0030033141374588013,
+          "predicted_net_gain": 0.011138555812782263,
+          "acquired": true
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": 0.01962079719174875,
+          "acquired": true
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": 0.018260031938552856,
+          "predicted_net_gain": 0.019517921242093207,
+          "acquired": true
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": 0.0162846860055581,
+          "acquired": true
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": 0.0396221112583475,
+          "acquired": true
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": 0.01690109868625493,
+          "acquired": true
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.004813879728317261,
+          "predicted_net_gain": 0.03188950639590917,
+          "acquired": true
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": 0.035721019336131664,
+          "acquired": true
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": 0.03330121793422909,
+          "acquired": true
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": 0.016365369618370536,
+          "acquired": true
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.02691216022344603,
+          "acquired": true
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": 0.023111198046908265,
+          "acquired": true
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": 0.04672514672172591,
+          "acquired": true
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.019922347561876455,
+          "acquired": true
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.03881189985257516,
+          "acquired": true
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": 0.0009729673451860125,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.01796734729989718,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.018435714424968566,
+          "acquired": true
+        }
+      ]
+    },
+    {
+      "probe": "momentum_zero:2:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.0017141657881438732,
+      "oof_discovery_positive_episodes": 19,
+      "always_head_development_loss": 3.422723200172186,
+      "incremental_head_loss_vs_same_horizon_logs": 0.0022745163490374884,
+      "net_head_loss_vs_full_logs": 0.004284612213571866,
+      "gate_development_loss": 3.418438587958614,
+      "gate_acquisitions": 0,
+      "actual_positive_gain_episodes": 8,
+      "gate_true_positive": 0,
+      "gate_false_positive": 0,
+      "gate_false_negative": 8,
+      "oracle_gate_with_fitted_head_loss": 3.417227890342474,
+      "predicted_gain_mean": -0.012553424774252387,
+      "actual_gain_mean": -0.004284612213571866,
+      "gain_prediction_corr": 0.6550188304416881,
+      "signal_future_action_contrast_corr_discovery": -0.09057163121738841,
+      "signal_future_action_contrast_corr_development": -0.7596193794805739,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.010281038663010089,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.02869299054145813,
+          "predicted_net_gain": -0.03147058260777444,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.012804634079061902,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.007673487067222595,
+          "predicted_net_gain": -0.010862160384952423,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.01857663929275838,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.0006483729462929909,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": -0.01235614317027731,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.007182970643043518,
+          "predicted_net_gain": -0.011193800804259756,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": 0.002630174160003662,
+          "predicted_net_gain": -0.007512211000733993,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.026663962667491818,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": -0.0044750629843554315,
+          "acquired": false
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": -0.00813494622707367,
+          "predicted_net_gain": -0.01416568488388235,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.0029086023569107056,
+          "predicted_net_gain": -0.011387001523844314,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.002355913976036212,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.015153612645723223,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.014378617905471139,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01106476645622826,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.030287416464201584,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": -0.008105442634798215,
+          "acquired": false
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.011548224611957241,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.015085339402838004,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": -0.0022577403419960927,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.006542496443866761,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.012105328690245339,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "momentum_zero:4:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.000432776752859354,
+      "oof_discovery_positive_episodes": 20,
+      "always_head_development_loss": 3.4231169068564973,
+      "incremental_head_loss_vs_same_horizon_logs": 0.002668223033348719,
+      "net_head_loss_vs_full_logs": 0.004678318897883098,
+      "gate_development_loss": 3.4187589852760234,
+      "gate_acquisitions": 2,
+      "actual_positive_gain_episodes": 7,
+      "gate_true_positive": 0,
+      "gate_false_positive": 2,
+      "gate_false_negative": 7,
+      "oracle_gate_with_fitted_head_loss": 3.4176987384756408,
+      "predicted_gain_mean": -0.008355115001040877,
+      "actual_gain_mean": -0.004678318897883098,
+      "gain_prediction_corr": 0.509939024251737,
+      "signal_future_action_contrast_corr_discovery": -0.11447430309531037,
+      "signal_future_action_contrast_corr_development": -0.42220529026561665,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.010007294708345178,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.02869299054145813,
+          "predicted_net_gain": -0.021319824766618256,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.003962232751856379,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.011025836689408784,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.007734545111781634,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.00025245564262720097,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": -0.009814414995135839,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.01143186997130292,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": 0.002630174160003662,
+          "predicted_net_gain": -0.007428312079993934,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.01822285035321155,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": 0.0028581446038620254,
+          "acquired": true
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.013817355683894436,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.0029086023569107056,
+          "predicted_net_gain": -0.0021370580720494244,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.0008953443497281767,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.009338345577504655,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.01411379270197584,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.007405090772047396,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.01822088762131712,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": 0.0018447892658374626,
+          "acquired": true
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.01182058131210346,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.002849262793195419,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": -0.002011900620072467,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.008806235578503395,
+          "acquired": false
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.012610201742007086,
+          "acquired": false
+        }
+      ]
+    },
+    {
+      "probe": "momentum_zero:8:next_batch_loss",
+      "oof_discovery_mean_net_gain": -0.0011555948294699192,
+      "oof_discovery_positive_episodes": 19,
+      "always_head_development_loss": 3.4231169068564973,
+      "incremental_head_loss_vs_same_horizon_logs": 0.002668223033348719,
+      "net_head_loss_vs_full_logs": 0.004678318897883098,
+      "gate_development_loss": 3.4189452870438495,
+      "gate_acquisitions": 5,
+      "actual_positive_gain_episodes": 7,
+      "gate_true_positive": 1,
+      "gate_false_positive": 4,
+      "gate_false_negative": 6,
+      "oracle_gate_with_fitted_head_loss": 3.4176987384756408,
+      "predicted_gain_mean": -0.004222484320746689,
+      "actual_gain_mean": -0.004678318897883098,
+      "gain_prediction_corr": 0.5416341338076561,
+      "signal_future_action_contrast_corr_discovery": -0.22466794230510057,
+      "signal_future_action_contrast_corr_development": -0.2479741504781594,
+      "per_episode": [
+        {
+          "id": "development-012-blend_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0009014904499053955,
+          "predicted_net_gain": -0.002135702683585393,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.02869299054145813,
+          "predicted_net_gain": -0.013107571989871988,
+          "acquired": false
+        },
+        {
+          "id": "development-012-lr_half",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.0018981099128723145,
+          "predicted_net_gain": -0.005190680115105862,
+          "acquired": false
+        },
+        {
+          "id": "development-012-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.0005143731832504272,
+          "predicted_net_gain": -0.0009283669848025177,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_160",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.003854990005493164,
+          "predicted_net_gain": -0.008318534474405264,
+          "acquired": false
+        },
+        {
+          "id": "development-012-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0015352517366409302,
+          "predicted_net_gain": -0.0008692273758843293,
+          "acquired": false
+        },
+        {
+          "id": "development-012-stale_40",
+          "free_action": 0,
+          "head_action": 1,
+          "actual_net_gain": -0.005236208438873291,
+          "predicted_net_gain": 0.0009505495437393957,
+          "acquired": true
+        },
+        {
+          "id": "development-012-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": -0.00576917827129364,
+          "predicted_net_gain": -0.0011336296742864658,
+          "acquired": false
+        },
+        {
+          "id": "development-013-blend_80",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": 0.002630174160003662,
+          "predicted_net_gain": -0.0002589366444304031,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_double",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.04190097749233246,
+          "predicted_net_gain": -0.011277315106558182,
+          "acquired": false
+        },
+        {
+          "id": "development-013-lr_half",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.004487738013267517,
+          "predicted_net_gain": -0.000582609579755602,
+          "acquired": false
+        },
+        {
+          "id": "development-013-matched_stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035561025142669678,
+          "predicted_net_gain": -0.00499100363257478,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_160",
+          "free_action": 0,
+          "head_action": 2,
+          "actual_net_gain": -0.0029086023569107056,
+          "predicted_net_gain": -0.004613812486857053,
+          "acquired": false
+        },
+        {
+          "id": "development-013-native_80",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": -0.006045669317245483,
+          "predicted_net_gain": -0.009588924017921722,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_40",
+          "free_action": 0,
+          "head_action": 0,
+          "actual_net_gain": 0.0002250075340270996,
+          "predicted_net_gain": -0.008854520536669378,
+          "acquired": false
+        },
+        {
+          "id": "development-013-stale_80",
+          "free_action": 1,
+          "head_action": 1,
+          "actual_net_gain": 0.0035263895988464355,
+          "predicted_net_gain": -0.005147428925177938,
+          "acquired": false
+        },
+        {
+          "id": "development-014-blend_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.002104321696836205,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_double",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.01289050281047821,
+          "predicted_net_gain": -0.015752350373431534,
+          "acquired": false
+        },
+        {
+          "id": "development-014-lr_half",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003201797604560852,
+          "predicted_net_gain": -0.003061499763982742,
+          "acquired": false
+        },
+        {
+          "id": "development-014-matched_stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.001027482219864771,
+          "acquired": true
+        },
+        {
+          "id": "development-014-native_160",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": -0.007804243946657888,
+          "acquired": false
+        },
+        {
+          "id": "development-014-native_80",
+          "free_action": 1,
+          "head_action": 2,
+          "actual_net_gain": 0.0024284720420837402,
+          "predicted_net_gain": 0.0007592930379950818,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_40",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.0008846854001271849,
+          "acquired": true
+        },
+        {
+          "id": "development-014-stale_80",
+          "free_action": 2,
+          "head_action": 2,
+          "actual_net_gain": -0.003117680549621582,
+          "predicted_net_gain": 0.0007590461091482544,
+          "acquired": true
+        }
+      ]
+    }
+  ],
+  "capacity_sweep": {
+    "file": "postrun_capacity_sweep.json",
+    "settings": 20,
+    "probe_evaluations": 160,
+    "best_free_dev_loss": 3.4163845827182135,
+    "best_paid_head_dev_loss": 3.4172252509742975,
+    "best_conditional_gate_dev_loss": 3.4165741465985775,
+    "positive_net_oof_and_dev": 52,
+    "positive_same_horizon_oof_and_dev": 6
+  }
+}

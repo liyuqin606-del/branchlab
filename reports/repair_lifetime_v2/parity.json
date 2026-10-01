@@ -1,0 +1,3372 @@
+{
+  "status": "completed",
+  "tolerance": 1e-06,
+  "comparisons": [
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.530785158276558,
+      "actual": 3.530785158276558,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.538637101650238,
+      "actual": 3.538637101650238,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.544765070080757,
+      "actual": 3.544765070080757,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.5405137091875076,
+      "actual": 3.5405137091875076,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.5420196801424026,
+      "actual": 3.5420196801424026,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.533194378018379,
+      "actual": 3.533194378018379,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4454122483730316,
+      "actual": 3.4454122483730316,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4410298466682434,
+      "actual": 3.4410298466682434,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.45038378238678,
+      "actual": 3.45038378238678,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4512071758508682,
+      "actual": 3.4512071758508682,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4793827533721924,
+      "actual": 3.4793827533721924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4890512973070145,
+      "actual": 3.4890512973070145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.439741536974907,
+      "actual": 3.439741536974907,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4424735605716705,
+      "actual": 3.4424735605716705,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4400196373462677,
+      "actual": 3.4400196373462677,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4395326524972916,
+      "actual": 3.4395326524972916,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4793827533721924,
+      "actual": 3.4793827533721924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4890512973070145,
+      "actual": 3.4890512973070145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.489827051758766,
+      "actual": 3.489827051758766,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4968937933444977,
+      "actual": 3.4968937933444977,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4453831166028976,
+      "actual": 3.4453831166028976,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.444602385163307,
+      "actual": 3.444602385163307,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4793827533721924,
+      "actual": 3.4793827533721924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4890512973070145,
+      "actual": 3.4890512973070145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4951615780591965,
+      "actual": 3.4951615780591965,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4998060762882233,
+      "actual": 3.4998060762882233,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4474594593048096,
+      "actual": 3.4474594593048096,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4467733502388,
+      "actual": 3.4467733502388,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4793827533721924,
+      "actual": 3.4793827533721924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4890512973070145,
+      "actual": 3.4890512973070145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4564779698848724,
+      "actual": 3.4564779698848724,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.441225916147232,
+      "actual": 3.441225916147232,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4482127726078033,
+      "actual": 3.4482127726078033,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4480757862329483,
+      "actual": 3.4480757862329483,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4793827533721924,
+      "actual": 3.4793827533721924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4890512973070145,
+      "actual": 3.4890512973070145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.45038378238678,
+      "actual": 3.45038378238678,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4512071758508682,
+      "actual": 3.4512071758508682,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4464616626501083,
+      "actual": 3.4464616626501083,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4453684091567993,
+      "actual": 3.4453684091567993,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4456034749746323,
+      "actual": 3.4456034749746323,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4446698427200317,
+      "actual": 3.4446698427200317,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.452356219291687,
+      "actual": 3.452356219291687,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4637205749750137,
+      "actual": 3.4637205749750137,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4454122483730316,
+      "actual": 3.4454122483730316,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4410298466682434,
+      "actual": 3.4410298466682434,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4397602677345276,
+      "actual": 3.4397602677345276,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-008-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.469745174050331,
+      "actual": 3.469745174050331,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.5430837720632553,
+      "actual": 3.5430837720632553,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.5357870757579803,
+      "actual": 3.5357870757579803,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.5735377073287964,
+      "actual": 3.5735377073287964,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.5738801807165146,
+      "actual": 3.5738801807165146,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.5421226173639297,
+      "actual": 3.5421226173639297,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.540658622980118,
+      "actual": 3.540658622980118,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4373754262924194,
+      "actual": 3.4373754262924194,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.437425062060356,
+      "actual": 3.437425062060356,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.432701915502548,
+      "actual": 3.432701915502548,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4335505068302155,
+      "actual": 3.4335505068302155,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4424723088741302,
+      "actual": 3.4424723088741302,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.445737510919571,
+      "actual": 3.445737510919571,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4377607852220535,
+      "actual": 3.4377607852220535,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.43974632024765,
+      "actual": 3.43974632024765,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.432651534676552,
+      "actual": 3.432651534676552,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4351124614477158,
+      "actual": 3.4351124614477158,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4424723088741302,
+      "actual": 3.4424723088741302,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.445737510919571,
+      "actual": 3.445737510919571,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.436243921518326,
+      "actual": 3.436243921518326,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4378119111061096,
+      "actual": 3.4378119111061096,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4396906048059464,
+      "actual": 3.4396906048059464,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.440169647336006,
+      "actual": 3.440169647336006,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4424723088741302,
+      "actual": 3.4424723088741302,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.445737510919571,
+      "actual": 3.445737510919571,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.43852561712265,
+      "actual": 3.43852561712265,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.440207213163376,
+      "actual": 3.440207213163376,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4389671236276627,
+      "actual": 3.4389671236276627,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.439584508538246,
+      "actual": 3.439584508538246,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4424723088741302,
+      "actual": 3.4424723088741302,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.445737510919571,
+      "actual": 3.445737510919571,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4409114122390747,
+      "actual": 3.4409114122390747,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4417788684368134,
+      "actual": 3.4417788684368134,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.435147151350975,
+      "actual": 3.435147151350975,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4360704720020294,
+      "actual": 3.4360704720020294,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4424723088741302,
+      "actual": 3.4424723088741302,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.445737510919571,
+      "actual": 3.445737510919571,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.432701915502548,
+      "actual": 3.432701915502548,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4335505068302155,
+      "actual": 3.4335505068302155,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4375138729810715,
+      "actual": 3.4375138729810715,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4370919317007065,
+      "actual": 3.4370919317007065,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.438629150390625,
+      "actual": 3.438629150390625,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.441458076238632,
+      "actual": 3.441458076238632,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4644516557455063,
+      "actual": 3.4644516557455063,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4624783098697662,
+      "actual": 3.4624783098697662,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4373754262924194,
+      "actual": 3.4373754262924194,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.437425062060356,
+      "actual": 3.437425062060356,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.474440425634384,
+      "actual": 3.474440425634384,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-009-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.467853859066963,
+      "actual": 3.467853859066963,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.511608898639679,
+      "actual": 3.511608898639679,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.5066607147455215,
+      "actual": 3.5066607147455215,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.5125290751457214,
+      "actual": 3.5125290751457214,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.508078411221504,
+      "actual": 3.508078411221504,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.516696885228157,
+      "actual": 3.516696885228157,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.5298610627651215,
+      "actual": 3.5298610627651215,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.411259263753891,
+      "actual": 3.411259263753891,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.408415734767914,
+      "actual": 3.408415734767914,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3904949873685837,
+      "actual": 3.3904949873685837,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.394560232758522,
+      "actual": 3.394560232758522,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4156494438648224,
+      "actual": 3.4156494438648224,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.413069099187851,
+      "actual": 3.413069099187851,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4183014780282974,
+      "actual": 3.4183014780282974,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4199585616588593,
+      "actual": 3.4199585616588593,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.392661616206169,
+      "actual": 3.392661616206169,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3949718326330185,
+      "actual": 3.3949718326330185,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4156494438648224,
+      "actual": 3.4156494438648224,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.413069099187851,
+      "actual": 3.413069099187851,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.421491175889969,
+      "actual": 3.421491175889969,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.416056677699089,
+      "actual": 3.416056677699089,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3925899416208267,
+      "actual": 3.3925899416208267,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3941534608602524,
+      "actual": 3.3941534608602524,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4156494438648224,
+      "actual": 3.4156494438648224,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.413069099187851,
+      "actual": 3.413069099187851,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.421563982963562,
+      "actual": 3.421563982963562,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.416133776307106,
+      "actual": 3.416133776307106,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3925629407167435,
+      "actual": 3.3925629407167435,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.394137129187584,
+      "actual": 3.394137129187584,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4156494438648224,
+      "actual": 3.4156494438648224,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.413069099187851,
+      "actual": 3.413069099187851,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.411946579813957,
+      "actual": 3.411946579813957,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.411567449569702,
+      "actual": 3.411567449569702,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.39112152159214,
+      "actual": 3.39112152159214,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3937061578035355,
+      "actual": 3.3937061578035355,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4156494438648224,
+      "actual": 3.4156494438648224,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.413069099187851,
+      "actual": 3.413069099187851,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3904949873685837,
+      "actual": 3.3904949873685837,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.394560232758522,
+      "actual": 3.394560232758522,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.397247076034546,
+      "actual": 3.397247076034546,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3968832790851593,
+      "actual": 3.3968832790851593,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3978168964385986,
+      "actual": 3.3978168964385986,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3993162661790848,
+      "actual": 3.3993162661790848,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.412931591272354,
+      "actual": 3.412931591272354,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4119082540273666,
+      "actual": 3.4119082540273666,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.411259263753891,
+      "actual": 3.411259263753891,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.408415734767914,
+      "actual": 3.408415734767914,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.421921953558922,
+      "actual": 3.421921953558922,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-010-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.439620152115822,
+      "actual": 3.439620152115822,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.5456486642360687,
+      "actual": 3.5456486642360687,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.538201630115509,
+      "actual": 3.538201630115509,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.5870054066181183,
+      "actual": 3.5870054066181183,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.581142485141754,
+      "actual": 3.581142485141754,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.556330993771553,
+      "actual": 3.556330993771553,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.5570045113563538,
+      "actual": 3.5570045113563538,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4534209221601486,
+      "actual": 3.4534209221601486,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4357294142246246,
+      "actual": 3.4357294142246246,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.428958907723427,
+      "actual": 3.428958907723427,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4308266192674637,
+      "actual": 3.4308266192674637,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.469675585627556,
+      "actual": 3.469675585627556,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560873210430145,
+      "actual": 3.4560873210430145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4648439437150955,
+      "actual": 3.4648439437150955,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4566039741039276,
+      "actual": 3.4566039741039276,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4358059614896774,
+      "actual": 3.4358059614896774,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4321545362472534,
+      "actual": 3.4321545362472534,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.469675585627556,
+      "actual": 3.469675585627556,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560873210430145,
+      "actual": 3.4560873210430145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4573629647493362,
+      "actual": 3.4573629647493362,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4517553746700287,
+      "actual": 3.4517553746700287,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4364596754312515,
+      "actual": 3.4364596754312515,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.437831535935402,
+      "actual": 3.437831535935402,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.469675585627556,
+      "actual": 3.469675585627556,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560873210430145,
+      "actual": 3.4560873210430145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4749832302331924,
+      "actual": 3.4749832302331924,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.462570235133171,
+      "actual": 3.462570235133171,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4373981654644012,
+      "actual": 3.4373981654644012,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4398773163557053,
+      "actual": 3.4398773163557053,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.469675585627556,
+      "actual": 3.469675585627556,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560873210430145,
+      "actual": 3.4560873210430145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.46156407892704,
+      "actual": 3.46156407892704,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4437728971242905,
+      "actual": 3.4437728971242905,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.432788610458374,
+      "actual": 3.432788610458374,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4343367367982864,
+      "actual": 3.4343367367982864,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.469675585627556,
+      "actual": 3.469675585627556,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560873210430145,
+      "actual": 3.4560873210430145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.428958907723427,
+      "actual": 3.428958907723427,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4308266192674637,
+      "actual": 3.4308266192674637,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4324776083230972,
+      "actual": 3.4324776083230972,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.429673984646797,
+      "actual": 3.429673984646797,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4378789216279984,
+      "actual": 3.4378789216279984,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4387851506471634,
+      "actual": 3.4387851506471634,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.460631862282753,
+      "actual": 3.460631862282753,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4409066885709763,
+      "actual": 3.4409066885709763,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4534209221601486,
+      "actual": 3.4534209221601486,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4357294142246246,
+      "actual": 3.4357294142246246,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4699633568525314,
+      "actual": 3.4699633568525314,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "discovery-011-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4560501873493195,
+      "actual": 3.4560501873493195,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.532439276576042,
+      "actual": 3.532439276576042,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.5299830436706543,
+      "actual": 3.5299830436706543,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.551713228225708,
+      "actual": 3.551713228225708,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.552235409617424,
+      "actual": 3.552235409617424,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.550700157880783,
+      "actual": 3.550700157880783,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.543387144804001,
+      "actual": 3.543387144804001,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3768086433410645,
+      "actual": 3.3768086433410645,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3806636333465576,
+      "actual": 3.3806636333465576,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3810067176818848,
+      "actual": 3.3810067176818848,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3791086077690125,
+      "actual": 3.3791086077690125,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.376727119088173,
+      "actual": 3.376727119088173,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3735527396202087,
+      "actual": 3.3735527396202087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3774107098579407,
+      "actual": 3.3774107098579407,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3804140239953995,
+      "actual": 3.3804140239953995,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3856502324342728,
+      "actual": 3.3856502324342728,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3865857273340225,
+      "actual": 3.3865857273340225,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.376727119088173,
+      "actual": 3.376727119088173,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3735527396202087,
+      "actual": 3.3735527396202087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.374430701136589,
+      "actual": 3.374430701136589,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.378748267889023,
+      "actual": 3.378748267889023,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.38967926800251,
+      "actual": 3.38967926800251,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3839100897312164,
+      "actual": 3.3839100897312164,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.376727119088173,
+      "actual": 3.376727119088173,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3735527396202087,
+      "actual": 3.3735527396202087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.373991385102272,
+      "actual": 3.373991385102272,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3782939463853836,
+      "actual": 3.3782939463853836,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.384914979338646,
+      "actual": 3.384914979338646,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3844006061553955,
+      "actual": 3.3844006061553955,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.376727119088173,
+      "actual": 3.376727119088173,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3735527396202087,
+      "actual": 3.3735527396202087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.37115678191185,
+      "actual": 3.37115678191185,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.377826616168022,
+      "actual": 3.377826616168022,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3848766684532166,
+      "actual": 3.3848766684532166,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.383975178003311,
+      "actual": 3.383975178003311,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.376727119088173,
+      "actual": 3.376727119088173,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3735527396202087,
+      "actual": 3.3735527396202087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3810067176818848,
+      "actual": 3.3810067176818848,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3791086077690125,
+      "actual": 3.3791086077690125,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.393115311861038,
+      "actual": 3.393115311861038,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3910594433546066,
+      "actual": 3.3910594433546066,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3886222541332245,
+      "actual": 3.3886222541332245,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3864559829235077,
+      "actual": 3.3864559829235077,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.351154550909996,
+      "actual": 3.351154550909996,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3554562628269196,
+      "actual": 3.3554562628269196,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3768086433410645,
+      "actual": 3.3768086433410645,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3806636333465576,
+      "actual": 3.3806636333465576,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3841492533683777,
+      "actual": 3.3841492533683777,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-012-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.389515236020088,
+      "actual": 3.389515236020088,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.594787061214447,
+      "actual": 3.594787061214447,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.5887413918972015,
+      "actual": 3.5887413918972015,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.5602033585309982,
+      "actual": 3.5602033585309982,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.567281663417816,
+      "actual": 3.567281663417816,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.618261218070984,
+      "actual": 3.618261218070984,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.617171674966812,
+      "actual": 3.617171674966812,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4251307249069214,
+      "actual": 3.4251307249069214,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4299446046352386,
+      "actual": 3.4299446046352386,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.415356323122978,
+      "actual": 3.415356323122978,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.418558895587921,
+      "actual": 3.418558895587921,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4328532069921494,
+      "actual": 3.4328532069921494,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.438236176967621,
+      "actual": 3.438236176967621,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4306526333093643,
+      "actual": 3.4306526333093643,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4308776408433914,
+      "actual": 3.4308776408433914,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.41823473572731,
+      "actual": 3.41823473572731,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4220121800899506,
+      "actual": 3.4220121800899506,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4328532069921494,
+      "actual": 3.4328532069921494,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.438236176967621,
+      "actual": 3.438236176967621,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4452815800905228,
+      "actual": 3.4452815800905228,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4465324729681015,
+      "actual": 3.4465324729681015,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4214147180318832,
+      "actual": 3.4214147180318832,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4249411076307297,
+      "actual": 3.4249411076307297,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4328532069921494,
+      "actual": 3.4328532069921494,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.438236176967621,
+      "actual": 3.438236176967621,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4448974430561066,
+      "actual": 3.4448974430561066,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.4481132477521896,
+      "actual": 3.4481132477521896,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4211621582508087,
+      "actual": 3.4211621582508087,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4247182607650757,
+      "actual": 3.4247182607650757,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4328532069921494,
+      "actual": 3.4328532069921494,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.438236176967621,
+      "actual": 3.438236176967621,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4356214106082916,
+      "actual": 3.4356214106082916,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.435483381152153,
+      "actual": 3.435483381152153,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4172233492136,
+      "actual": 3.4172233492136,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4212902188301086,
+      "actual": 3.4212902188301086,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4328532069921494,
+      "actual": 3.4328532069921494,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.438236176967621,
+      "actual": 3.438236176967621,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.415356323122978,
+      "actual": 3.415356323122978,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.418558895587921,
+      "actual": 3.418558895587921,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.434299275279045,
+      "actual": 3.434299275279045,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.429922416806221,
+      "actual": 3.429922416806221,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4230466336011887,
+      "actual": 3.4230466336011887,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.4275426864624023,
+      "actual": 3.4275426864624023,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.4473185390233994,
+      "actual": 3.4473185390233994,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.44216725230217,
+      "actual": 3.44216725230217,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4251307249069214,
+      "actual": 3.4251307249069214,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4299446046352386,
+      "actual": 3.4299446046352386,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4840682297945023,
+      "actual": 3.4840682297945023,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-013-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.488999903202057,
+      "actual": 3.488999903202057,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.5332251638174057,
+      "actual": 3.5332251638174057,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.5491126626729965,
+      "actual": 3.5491126626729965,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.5134382843971252,
+      "actual": 3.5134382843971252,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.5175162702798843,
+      "actual": 3.5175162702798843,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.5150877982378006,
+      "actual": 3.5150877982378006,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.527757704257965,
+      "actual": 3.527757704257965,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3791688978672028,
+      "actual": 3.3791688978672028,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.373499572277069,
+      "actual": 3.373499572277069,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3987725973129272,
+      "actual": 3.3987725973129272,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.395849570631981,
+      "actual": 3.395849570631981,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3908362686634064,
+      "actual": 3.3908362686634064,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-native_160",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.387718588113785,
+      "actual": 3.387718588113785,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.391878694295883,
+      "actual": 3.391878694295883,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3876239210367203,
+      "actual": 3.3876239210367203,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.401485562324524,
+      "actual": 3.401485562324524,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.398607686161995,
+      "actual": 3.398607686161995,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3908362686634064,
+      "actual": 3.3908362686634064,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_40",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.387718588113785,
+      "actual": 3.387718588113785,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3960085809230804,
+      "actual": 3.3960085809230804,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3938108533620834,
+      "actual": 3.3938108533620834,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.402122288942337,
+      "actual": 3.402122288942337,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4001636505126953,
+      "actual": 3.4001636505126953,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3908362686634064,
+      "actual": 3.3908362686634064,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.387718588113785,
+      "actual": 3.387718588113785,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.392802268266678,
+      "actual": 3.392802268266678,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.392685279250145,
+      "actual": 3.392685279250145,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.401952862739563,
+      "actual": 3.401952862739563,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.3989878743886948,
+      "actual": 3.3989878743886948,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3908362686634064,
+      "actual": 3.3908362686634064,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-matched_stale_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.387718588113785,
+      "actual": 3.387718588113785,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3983448296785355,
+      "actual": 3.3983448296785355,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.3928889334201813,
+      "actual": 3.3928889334201813,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.4015810936689377,
+      "actual": 3.4015810936689377,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.398691087961197,
+      "actual": 3.398691087961197,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.3908362686634064,
+      "actual": 3.3908362686634064,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-blend_80",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.387718588113785,
+      "actual": 3.387718588113785,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3987725973129272,
+      "actual": 3.3987725973129272,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.395849570631981,
+      "actual": 3.395849570631981,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.410412907600403,
+      "actual": 3.410412907600403,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.4096082597970963,
+      "actual": 3.4096082597970963,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.4028547406196594,
+      "actual": 3.4028547406196594,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_half",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3996529430150986,
+      "actual": 3.3996529430150986,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "keep",
+      "horizon": 63,
+      "expected": 3.3832152485847473,
+      "actual": 3.3832152485847473,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "keep",
+      "horizon": 64,
+      "expected": 3.376975893974304,
+      "actual": 3.376975893974304,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "lr_half",
+      "horizon": 63,
+      "expected": 3.3791688978672028,
+      "actual": 3.3791688978672028,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "lr_half",
+      "horizon": 64,
+      "expected": 3.373499572277069,
+      "actual": 3.373499572277069,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "momentum_zero",
+      "horizon": 63,
+      "expected": 3.404058113694191,
+      "actual": 3.404058113694191,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    },
+    {
+      "episode_id": "development-014-lr_double",
+      "action": "momentum_zero",
+      "horizon": 64,
+      "expected": 3.3911676108837128,
+      "actual": 3.3911676108837128,
+      "abs_difference": 0.0,
+      "exact": true,
+      "passed": true
+    }
+  ],
+  "comparison_count": 336,
+  "expected_comparisons": 336,
+  "passed": true,
+  "all_observed_passed": true,
+  "all_exact": true,
+  "max_abs_difference": 0.0
+}

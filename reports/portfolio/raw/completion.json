@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "runs": [
+    "mha-s101",
+    "gqa-s101",
+    "mha-s202",
+    "gqa-s202",
+    "mha-s303",
+    "gqa-s303",
+    "showcase-gqa"
+  ],
+  "wall_seconds": 1172.088944011,
+  "protocol_sha256": "58e6b36fa6e0335c8088796f06b12ede0a87d1f2bf012aefe9252254c31a0c19"
+}

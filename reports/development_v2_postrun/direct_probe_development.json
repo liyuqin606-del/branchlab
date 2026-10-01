@@ -1,0 +1,121 @@
+{
+  "scope": "Post-run development exploration, no confirmatory evidence",
+  "by_split": {
+    "discovery": [
+      {
+        "offset": 1,
+        "unadjusted_three_forward_oracle_proxy": 3.4572573704645038,
+        "accuracy": 0.125,
+        "action_freq": [
+          13,
+          2,
+          17
+        ],
+        "corr": [
+          -0.009187667609697253,
+          -0.01763941269893306
+        ]
+      },
+      {
+        "offset": 2,
+        "unadjusted_three_forward_oracle_proxy": 3.457515604328364,
+        "accuracy": 0.09375,
+        "action_freq": [
+          10,
+          2,
+          20
+        ],
+        "corr": [
+          -0.02125508422417802,
+          -0.09057163121738841
+        ]
+      },
+      {
+        "offset": 4,
+        "unadjusted_three_forward_oracle_proxy": 3.4547939472831786,
+        "accuracy": 0.15625,
+        "action_freq": [
+          8,
+          6,
+          18
+        ],
+        "corr": [
+          0.1473730346660708,
+          -0.11447430309531037
+        ]
+      },
+      {
+        "offset": 8,
+        "unadjusted_three_forward_oracle_proxy": 3.4579248316586018,
+        "accuracy": 0.1875,
+        "action_freq": [
+          16,
+          2,
+          14
+        ],
+        "corr": [
+          0.14407260000787733,
+          -0.22466794230510057
+        ]
+      }
+    ],
+    "development": [
+      {
+        "offset": 1,
+        "unadjusted_three_forward_oracle_proxy": 3.4219847290466228,
+        "accuracy": 0.2916666666666667,
+        "action_freq": [
+          7,
+          0,
+          17
+        ],
+        "corr": [
+          -0.5721234476321235,
+          -0.2871853055238381
+        ]
+      },
+      {
+        "offset": 2,
+        "unadjusted_three_forward_oracle_proxy": 3.4255466498434544,
+        "accuracy": 0.25,
+        "action_freq": [
+          9,
+          0,
+          15
+        ],
+        "corr": [
+          -0.3060790833479173,
+          -0.759619379480574
+        ]
+      },
+      {
+        "offset": 4,
+        "unadjusted_three_forward_oracle_proxy": 3.42349919055899,
+        "accuracy": 0.16666666666666666,
+        "action_freq": [
+          6,
+          0,
+          18
+        ],
+        "corr": [
+          -0.1286571913782893,
+          -0.4222052902656166
+        ]
+      },
+      {
+        "offset": 8,
+        "unadjusted_three_forward_oracle_proxy": 3.4242668033887944,
+        "accuracy": 0.25,
+        "action_freq": [
+          9,
+          7,
+          8
+        ],
+        "corr": [
+          -0.13103575677899712,
+          -0.24797415047815935
+        ]
+      }
+    ]
+  }
+}

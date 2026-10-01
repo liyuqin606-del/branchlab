@@ -1,0 +1,13 @@
+{
+  "completed": [
+    "mha-s101",
+    "gqa-s101",
+    "mha-s202",
+    "gqa-s202",
+    "mha-s303",
+    "gqa-s303",
+    "showcase-gqa"
+  ],
+  "total_runs": 7,
+  "wall_seconds": 1172.088552611
+}

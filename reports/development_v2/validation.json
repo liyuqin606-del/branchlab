@@ -1,0 +1,71 @@
+{
+  "status": "source_freeze_matches",
+  "collector_core_checks": [
+    {
+      "path": "configs/development_v2.json",
+      "matches": true
+    },
+    {
+      "path": "protocols/development_v2.md",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/value_aware.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/benchmark.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/__init__.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/experiments_v2.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/model.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/tokenizer.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/experiments.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/cli.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/lookahead.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/optim.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/training.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/data.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/reporting.py",
+      "matches": true
+    },
+    {
+      "path": "src/branchlab/synthesis.py",
+      "matches": true
+    }
+  ],
+  "analysis_sha256": "bf720927ec4575b8a866b03320cec50547be15ccd755b4ddced6d44ea79afcf7",
+  "confirmatory": false
+}

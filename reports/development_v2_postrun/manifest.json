@@ -1,0 +1,45 @@
+{
+  "scope": "Post-hoc development exploration. All settings retained; no confirmation, no positive diagnostic result. Analysis scripts run from repository root and write notes/goal_v2/.",
+  "files": {
+    "diagnose_postrun_synthesis.py": {
+      "bytes": 6268,
+      "sha256": "dd4a7bc685ee0b7c63f30e32ac2a549b733e0b62af3c2d09481b47285ae8d08d"
+    },
+    "direct_probe_development.json": {
+      "bytes": 2567,
+      "sha256": "89eba8c14b826a7b5de223786b078ca3aa24ca7bb39b58d08c0e98042da9ba25"
+    },
+    "postrun_capacity_sweep.json": {
+      "bytes": 199286,
+      "sha256": "e78ef88ddda29c634e7a7407c6350bb020cfdfda98b533f5f0a60f7f203fb7d0"
+    },
+    "postrun_model_diagnosis.json": {
+      "bytes": 63097,
+      "sha256": "400c163b6ce56a976890afa3e777f4758744838b2c234034fef49d72f8c2ba46"
+    },
+    "postrun_model_diagnosis.md": {
+      "bytes": 5393,
+      "sha256": "ebb46dbcd0301cd9a6fb2070f83162fa26a36e371fbc0f5ac1794dc599bd5f11"
+    },
+    "postrun_synthesis_diagnosis.json": {
+      "bytes": 60628,
+      "sha256": "e17bbdadb0cddb615651dd5c5b06bf67f3d879ea71b8c38dc337f6659ebb72d7"
+    },
+    "postrun_synthesis_diagnosis.md": {
+      "bytes": 6016,
+      "sha256": "ddc350ecb59128d08148e8997faf2dacfff714cf1c8c2f260b1c384fe1380937"
+    },
+    "prototype_residual.py": {
+      "bytes": 3572,
+      "sha256": "f8cdc0593f7d94e5f2d950cf316425a7d5ff9d939d0aef2eae1772395c21d727"
+    },
+    "prototype_residual_results.json": {
+      "bytes": 34586,
+      "sha256": "ed92ffd798ce3439639a569886e5977d26b0f0abb8c0b9427d6699b25d47be5f"
+    },
+    "sweep_postrun_development.py": {
+      "bytes": 5641,
+      "sha256": "08362768b3b1513df6082b7f532ae460d2ec4dbfc6f8ca40fa7e15bb92f22831"
+    }
+  }
+}

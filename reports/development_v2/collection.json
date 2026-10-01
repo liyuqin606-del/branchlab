@@ -1,0 +1,12 @@
+{
+  "gradient_batches": 11760,
+  "candidate_optimizer_steps": 168,
+  "ordinary_optimizer_steps": 11704,
+  "probe_forward_batches": 672,
+  "development_eval_forward_batches": 5376,
+  "failures": [],
+  "scope": "Actual construction counts; one shared gradient creates three candidate optimizer states. No test-text evaluations.",
+  "elapsed_seconds": 282.8983788339974,
+  "trained_tokens": 3010560,
+  "approx_forward_batch_units": 41328
+}
